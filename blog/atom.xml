@@ -8,7 +8,7 @@ layout: feed
 	<link href="http://balassit.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://balassit.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://hankquinlan.github.io/blog</id>
+	<id>http://balassit.github.io/blog</id>
 	<author>
 		<name>Blake Lassiter</name>
 		<email>blakelass@gmail.com</email>

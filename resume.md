@@ -4,9 +4,11 @@ title: Resume
 ---
 
 <hr>
+
 # Education
 *B.S. in Computer Science, Economics minor, 3.0 GPA, Dec. 2016*  
-**North Carolina State University － Raleigh, NC**
+**North Carolina State University － Raleigh, NC**  
+
 # Work Experience
 
 # Coursework/Projects

@@ -41,3 +41,16 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+tr:hover {
+    background: #CC0000;
+}
+tr:hover td  {
+    background: #CC0000;
+}
+tr:active { 
+        background: #CC0000;
+}
+tr:active td { 
+        background: #CC0000;
+}

@@ -26,25 +26,33 @@ Conducted and participated in board meetings to demo my projects and review mont
 Design process included translating requirements into a user flow and creating specific tasks for group members.
 
 # Skills
-**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python  
-**Operating Systems**: Windows 10, Ubuntu Linux  
-**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint  
-**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving  
+**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python  </br>
+**Operating Systems**: Windows 10, Ubuntu Linux  </br>
+**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint  </br>
+**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving  </br>
 
 # Coursework
 Human Computer Interaction, Software Security, Software Engineering, Data Structures, Database Management Systems, Software Wireless Systems, Java, C and Software Tool
 
 # Activites and Leadership
 **President of NC State Club Cross Country Team**: Work includes professional presentations with NC State faculty, leading team meetings, increasing membership.  
+
 **Coach of NC State Club Cross Country Team**: Experience managing a large team, creating interpersonal relationships, motivating members to work hard.  
-**Junior Assistant Scoutmaster of Boy Scout Troop 20** (2013): providing leadership for young scouts and responsible for any duties requested by the Scoutmaster.
+
+**Junior Assistant Scoutmaster of Boy Scout Troop 20** (2013): providing leadership for young scouts and responsible for any duties requested by the Scoutmaster.  
+
 
 # Honors and Awards
 **Eagle Award - Bioventus** (July 2016): earned for outstanding performance reviews in the month of July.  
+
 **Eagle Scout Award** (2013) Troop 20, High Point, NC  
+
 **AP Scholar Award** (2013)  
+
 **High School Coach's Award** (2013): Awarded for leadership, attitude, dedication, effort, and performance.**  
-**3xAll-Conference in Cross Country and Track (2012-2013)**
+
+**3xAll-Conference in Cross Country and Track (2012-2013)**  
+
 
 # References
 Chad Watson\t\t\t\tBarbara Adams\t\tDr. Ken Broman-Fulks

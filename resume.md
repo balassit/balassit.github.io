@@ -4,6 +4,7 @@ title: Resume
 ---
 
 <hr>
+3137 W. Lexington Ave. High Point, NC 27262 | balassit@ncsu.edu | (336)906-1736
 
 # Education
 **North Carolina State University － Raleigh, NC**  
@@ -58,12 +59,9 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 
 
 # References
-Chad Watson&ensp; &ensp; &ensp; &ensp;&ensp;  Barbara Adams&ensp; &ensp; &ensp; Dr. Ken Broman-Fulks
-
-Bioventus Global&ensp; &ensp; &ensp; &ensp; NC State University&ensp; &ensp; First Presbyterian Church of High Point
-
-Integration Architect&ensp; &ensp; &ensp; Academic Advisor &ensp; &ensp;Senior Minister
-
-(919) 513-7888&ensp; &ensp; (336)884-2248&ensp; &ensp; (919) 474-6825&ensp; &ensp; &ensp; 
-
-barbara_adams@ncsu.edu&ensp; ken@firstpreshp.org&ensp; chad.watson@bioventusglobal.com
+|Chad Watson | Barbara Adams | Dr. Ken Broman-Fulks |
+|----------- |-------------- | -------------------- |
+|Bioventus Global | NC State University | First Presbyterian Church of High Point |
+|Integration Architect | Academic Advisor | Senior Minister |
+|(919) 513-7888 | (336)884-2248 | (919) 474-6825 | 
+|barbara_adams@ncsu.edu | ken@firstpreshp.org | chad.watson@bioventusglobal.com |

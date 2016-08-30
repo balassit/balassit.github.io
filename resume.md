@@ -15,8 +15,11 @@ May 2016- August 2016*
 
 
 Designed integrations using SAP and REST capabilities via Boomi interface to enhance client accessibility.  
+
 Implemented DocuSign API with current configurations of SharePoint Online, allowing access to contracts as sorted lists with filters.  
+
 Data cleanse of customer records in database, improving data storage by ~40%, using SQL queries.  
+
 Documented several processes to maintain code, and allow for further improvements to be made after my internship concluded.  
 Conducted and participated in board meetings to demo my projects and review monthly company objectives.  
 
@@ -55,8 +58,8 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 
 
 # References
-Chad Watson\t\t\t\tBarbara Adams\t\tDr. Ken Broman-Fulks
-Bioventus Global\t\t\t\tNC State University\tFirst Presbyterian Church of High Point
-Integration Architect\t\t\t(919) 513-7888\t\t(336)884-2248
-(919) 474-6825\t\t\t\tbarbara\_adams@ncsu.edu\tken@firstpreshp.org
+Chad Watson&ensp; &ensp; &ensp; &ensp; Barbara Adams&ensp; &ensp; Dr. Ken Broman-Fulks
+Bioventus Global&ensp; &ensp; &ensp; &ensp; NC State University&ensp; &ensp; First Presbyterian Church of High Point
+Integration Architect\&ensp; &ensp; &ensp; (919) 513-7888&ensp; &ensp; (336)884-2248
+(919) 474-6825&ensp; &ensp; &ensp; barbara\_adams@ncsu.edu&ensp; ken@firstpreshp.org
 chad.watson@bioventusglobal.com

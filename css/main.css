@@ -43,19 +43,21 @@ ul.posts li {
 }
 table#references td{
     width: 33%; 
-} {
-    width: 33%;
-}
-
-blurb.tr:hover {
+} 
+table#references th{
+    width: 33%; 
+    text-align: left;
+} 
+ 
+table#paces tr:hover {
     background: #CC0000;
 }
-blurb.tr:hover td  {
+table#paces tr:hover td  {
     background: #CC0000;
 }
-blurb.tr:active { 
+table#paces tr:active { 
         background: #CC0000;
 }
-blurb.tr:active td { 
+table#paces tr:active td { 
         background: #CC0000;
 }

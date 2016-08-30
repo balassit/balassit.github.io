@@ -29,10 +29,13 @@ Conducted and participated in board meetings to demo my projects and review mont
 Design process included translating requirements into a user flow and creating specific tasks for group members.
 
 # Skills
-**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python  </br>
-**Operating Systems**: Windows 10, Ubuntu Linux  </br>
-**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint  </br>
-**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving  </br>
+**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python
+
+**Operating Systems**: Windows 10, Ubuntu Linux
+
+**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint
+
+**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving
 
 # Coursework
 Human Computer Interaction, Software Security, Software Engineering, Data Structures, Database Management Systems, Software Wireless Systems, Java, C and Software Tool

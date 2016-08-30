@@ -41,16 +41,19 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+td {
+    color: #333;
+}
+th{
+    text-align: left;
+    color: #333;
+} 
 table#references td{
     width: 33%; 
 } 
 table#references th{
     width: 33%; 
 }
-th{
-    text-align: left;
-} 
- 
 table#paces tr:hover {
     background: #CC0000;
 }

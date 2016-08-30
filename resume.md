@@ -59,8 +59,10 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 
 # References
 Chad Watson&ensp; &ensp; &ensp; &ensp;&ensp;  Barbara Adams&ensp; &ensp; &ensp; Dr. Ken Broman-Fulks
-Bioventus Global&ensp; &ensp; &ensp; &ensp;   NC State University&ensp; &ensp;  First Presbyterian Church of High Point
-Integration Architect\&ensp; &ensp; &ensp;    Academic Advisor &ensp; &ensp;    Senior Minister
+
+Bioventus Global&ensp; &ensp; &ensp; &ensp; NC State University&ensp; &ensp; First Presbyterian Church of High Point
+
+Integration Architect&ensp; &ensp; &ensp; Academic Advisor &ensp; &ensp;Senior Minister
 
 (919) 513-7888&ensp; &ensp; (336)884-2248&ensp; &ensp; (919) 474-6825&ensp; &ensp; &ensp; 
 

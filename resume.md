@@ -58,7 +58,7 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 
 
 # References
-<table>
+<table id="references">
 <th>Chad Watson</th><th>Barbara Adams</th><th>Dr. Ken Broman-Fulks</th>
   <tr>
       <td>Bioventus Global</td><td>NC State University</td><td>First Presbyterian Church of High Point</td>

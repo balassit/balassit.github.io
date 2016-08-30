@@ -10,7 +10,8 @@ title: Resume
 *B.S. in Computer Science, Economics minor, 3.0 GPA, Dec. 2016*
 
 # Work Experience
-**Business Analyst** | *Bioventus, Durham, NC*<p-style="text-align: right;">*May 2016- August 2016*</p>
+**Business Analyst** | *Bioventus, Durham, NC
+May 2016- August 2016*
 
 
 Designed integrations using SAP and REST capabilities via Boomi interface to enhance client accessibility.
@@ -21,29 +22,35 @@ Documented several processes to maintain code, and allow for further improvement
 internship concluded.
 Conducted and participated in board meetings to demo my projects and review monthly company objectives.
 
-# Coursework/Projects
-**Courses:** Software Engineering, Java, C and Software Tools, Data Structures, Database Management Systems, Software Wireless Systems
-
-**Database Management:** Team project developing relational model and schema for a database of a library, where users could checkout, return, and reserve objects associated with libraries. Implementation of schema in java for application code.
-
-**Software Engineering:** Feature development of student created java project in Agile teams. Included selenium web testing, SQL programming, and front end development using JSP. Additional work included refactoring prior written code. Design process included translating assigned requirements into a user flow and creating specific tasks for group
-members.
+# Academic Projects
+**Database Management**: Team project developing relational model and schema which implements the database of a library where users could checkout, return, and reserve objects. Implementation of schema in SQL and Java.
+**Software Engineering**: Feature development of student created java project in Agile teams. Included selenium web testing, SQL programming, and front end development using JSP. Additional work included refactoring codebase.
+Design process included translating requirements into a user flow and creating specific tasks for group members.
 
 # Skills
+**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python
+**Operating Systems**: Windows 10, Ubuntu Linux
+**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint
+**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving
 
-**Languages:** Java, C/C++,  SQL, JavaScript, HTML/CSS, Python  
-**Operating Systems:** Windows 10, Linux  
-**Software Tools:** Eclipse, Git, MySQL, Oracle, Android Studio, MS Word/Excel/PowerPoint  
-**Professional skills:** attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving
+# Coursework
+Human Computer Interaction, Software Security, Software Engineering, Data Structures, Database Management Systems, Software Wireless Systems, Java, C and Software Tool
 
 # Activites and Leadership
-**President of NC State Club Cross Country Team:** work includes professional presentations with NC State faculty, leading team meetings, increasing membership.  
-**Coach of NC State Club Cross Country Team: **Experience managing a large team, creating interpersonal relationships, motivating members to work hard.  
-**Junior Assistant Scoutmaster of Boy Scout Troop 20 (2013):** providing leadership for young scouts and responsible for any duties requested by the Scoutmaster.
+**President of NC State Club Cross Country Team**: Work includes professional presentations with NC State faculty, leading team meetings, increasing membership.  
+**Coach of NC State Club Cross Country Team**: Experience managing a large team, creating interpersonal relationships, motivating members to work hard.  
+**Junior Assistant Scoutmaster of Boy Scout Troop 20** (2013): providing leadership for young scouts and responsible for any duties requested by the Scoutmaster.
 
 # Honors and Awards
-**Eagle Scout Award (2013)** 
-**AP Scholar Award (2013)**  
-**National Honor Society Award (2013)**  
-**High School Coach's Award (2013):** Awarded for leadership, attitude, dedication, effort, and performance.**  
+**Eagle Award - Bioventus** (July 2016): earned for outstanding performance reviews in the month of July.
+**Eagle Scout Award** (2013) Troop 20, High Point, NC 
+**AP Scholar Award** (2013)
+**High School Coach's Award** (2013): Awarded for leadership, attitude, dedication, effort, and performance.**  
 **3xAll-Conference in Cross Country and Track (2012-2013)**
+
+# References
+Chad Watson				Barbara Adams		Dr. Ken Broman-Fulks
+Bioventus Global			NC State University	First Presbyterian Church of High Point
+Integration Architect			(919) 513-7888		(336)884-2248
+(919) 474-6825				barbara\_adams@ncsu.edu	ken@firstpreshp.org
+chad.watson@bioventusglobal.com		

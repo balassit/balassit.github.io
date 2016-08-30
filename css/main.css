@@ -41,19 +41,21 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-td {
+table#references td{
+    width: 33%; 
+} {
     width: 33%;
 }
 
-tr:hover {
+blurb.tr:hover {
     background: #CC0000;
 }
-tr:hover td  {
+blurb.tr:hover td  {
     background: #CC0000;
 }
-tr:active { 
+blurb.tr:active { 
         background: #CC0000;
 }
-tr:active td { 
+blurb.tr:active td { 
         background: #CC0000;
 }

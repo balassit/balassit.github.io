@@ -52,7 +52,7 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 
 **AP Scholar Award** (2013)  
 
-**High School Coach's Award** (2013): Awarded for leadership, attitude, dedication, effort, and performance.**  
+**High School Coach's Award** (2013): Awarded for leadership, attitude, dedication, effort, and performance.
 
 **3xAll-Conference in Cross Country and Track (2012-2013)**  
 

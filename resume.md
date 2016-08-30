@@ -14,24 +14,22 @@ title: Resume
 May 2016- August 2016*
 
 
-Designed integrations using SAP and REST capabilities via Boomi interface to enhance client accessibility.
-Implemented DocuSign API with current configurations of SharePoint Online, allowing access to contracts
-as sorted lists with filters.
-Data cleanse of customer records in database, improving data storage by ~40%, using SQL queries.
-Documented several processes to maintain code, and allow for further improvements to be made after my
-internship concluded.
-Conducted and participated in board meetings to demo my projects and review monthly company objectives.
+Designed integrations using SAP and REST capabilities via Boomi interface to enhance client accessibility.  
+Implemented DocuSign API with current configurations of SharePoint Online, allowing access to contracts as sorted lists with filters.  
+Data cleanse of customer records in database, improving data storage by ~40%, using SQL queries.  
+Documented several processes to maintain code, and allow for further improvements to be made after my internship concluded.  
+Conducted and participated in board meetings to demo my projects and review monthly company objectives.  
 
 # Academic Projects
-**Database Management**: Team project developing relational model and schema which implements the database of a library where users could checkout, return, and reserve objects. Implementation of schema in SQL and Java.
+**Database Management**: Team project developing relational model and schema which implements the database of a library where users could checkout, return, and reserve objects. Implementation of schema in SQL and Java.  
 **Software Engineering**: Feature development of student created java project in Agile teams. Included selenium web testing, SQL programming, and front end development using JSP. Additional work included refactoring codebase.
 Design process included translating requirements into a user flow and creating specific tasks for group members.
 
 # Skills
-**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python
-**Operating Systems**: Windows 10, Ubuntu Linux
-**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint
-**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving
+**Languages**: Java, C/C++, JavaScript, HTML/CSS, SQL, Python  
+**Operating Systems**: Windows 10, Ubuntu Linux  
+**Software Tools**:Git, Eclipse, MySQL, Visual Studio, Visual Cron, Boomi, SharePoint Online, Android Studio, Oracle, MS Word, Excel, PowerPoint  
+**Professional skills**: attentive, creative, dedicated, honest, reliable, responsible, productive, problem-solving  
 
 # Coursework
 Human Computer Interaction, Software Security, Software Engineering, Data Structures, Database Management Systems, Software Wireless Systems, Java, C and Software Tool
@@ -42,9 +40,9 @@ Human Computer Interaction, Software Security, Software Engineering, Data Struct
 **Junior Assistant Scoutmaster of Boy Scout Troop 20** (2013): providing leadership for young scouts and responsible for any duties requested by the Scoutmaster.
 
 # Honors and Awards
-**Eagle Award - Bioventus** (July 2016): earned for outstanding performance reviews in the month of July.
-**Eagle Scout Award** (2013) Troop 20, High Point, NC 
-**AP Scholar Award** (2013)
+**Eagle Award - Bioventus** (July 2016): earned for outstanding performance reviews in the month of July.  
+**Eagle Scout Award** (2013) Troop 20, High Point, NC  
+**AP Scholar Award** (2013)  
 **High School Coach's Award** (2013): Awarded for leadership, attitude, dedication, effort, and performance.**  
 **3xAll-Conference in Cross Country and Track (2012-2013)**
 

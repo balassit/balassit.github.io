@@ -6,10 +6,20 @@ title: Resume
 <hr>
 
 # Education
-*B.S. in Computer Science, Economics minor, 3.0 GPA, Dec. 2016*  
 **North Carolina State University － Raleigh, NC**  
+*B.S. in Computer Science, Economics minor, 3.0 GPA, Dec. 2016*
 
 # Work Experience
+**Business Analyst** | *Bioventus, Durham, NC*<p-style="text-align: right;">*May 2016- August 2016*</p>
+
+
+Designed integrations using SAP and REST capabilities via Boomi interface to enhance client accessibility.
+Implemented DocuSign API with current configurations of SharePoint Online, allowing access to contracts
+as sorted lists with filters.
+Data cleanse of customer records in database, improving data storage by ~40%, using SQL queries.
+Documented several processes to maintain code, and allow for further improvements to be made after my
+internship concluded.
+Conducted and participated in board meetings to demo my projects and review monthly company objectives.
 
 # Coursework/Projects
 **Courses:** Software Engineering, Java, C and Software Tools, Data Structures, Database Management Systems, Software Wireless Systems

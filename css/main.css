@@ -41,6 +41,9 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+td {
+    width: 33%;
+}
 
 tr:hover {
     background: #CC0000;

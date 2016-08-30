@@ -58,6 +58,6 @@ table#references td{
 table#references th{
     width: 33%; 
 }
-table.paces tr:hover, table.paces tr: hover td, table.paces tr:active, table.paces tr:active td, table.paces td:selected {
+table#paces tr:hover, table#paces tr:hover td, table#paces tr:active, table#paces tr:active td, table#paces td:selected {
     background: #CC0000;
 }

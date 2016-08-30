@@ -66,4 +66,4 @@ Integration Architect&ensp; &ensp; &ensp; Academic Advisor &ensp; &ensp;Senior M
 
 (919) 513-7888&ensp; &ensp; (336)884-2248&ensp; &ensp; (919) 474-6825&ensp; &ensp; &ensp; 
 
-barbara\_adams@ncsu.edu&ensp; ken@firstpreshp.org&ensp; chad.watson@bioventusglobal.com
+barbara_adams@ncsu.edu&ensp; ken@firstpreshp.org&ensp; chad.watson@bioventusglobal.com

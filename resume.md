@@ -3,8 +3,6 @@ layout: page
 title: Resume
 ---
 
-<hr>
-
 3137 W. Lexington Ave. High Point, NC 27262 \| balassit@ncsu.edu \| (336)906-1736
 
 # Education

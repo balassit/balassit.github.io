@@ -5,6 +5,119 @@ title: Blake Lassiter
 <div class="blurb">
 	<h1>Hi there, I'm Blake Lassiter!</h1>
 	<p>I am trying to make this confounded website. <a href="/about">Read more about me</a></p>
+	
+	
+<form id="form1">
+5k Time: <input name="time" type="text">
+</form>
+<button onclick="outputText()">Submit</button>
+<script>
+
+function outputText() {
+var i, minutes,y,name,a,b,answer, times;
+var row = "";
+x=document.getElementById("form1") ;
+y=x.elements["time"].value;
+  
+  if(validateTime(y)) {
+    answer = " 800     mile    3k      5k      6k      8k      10k     vLT     1/2     marathon <br>";
+    
+    minutes = timeToSeconds(y);
+    times = calculatePaces(minutes);
+    for(i = 0; i < times.length; i++) {
+      row +=convertPaces(times[i]) + " ";
+    }
+    
+    document.getElementById("demo").innerHTML="5k "+answer+"<br>" + minutes + "\t" + row;
+  }
+  else {
+    document.getElementById("demo").innerHTML="Invalid time";
+  }
+  return false;
+}
+  
+  //takes the string time input
+  //converts to a number of seconds
+  //then divides seconds into mintutes
+function timeToSeconds(time) {
+var times = time.split(":");
+times.reverse();
+var x = times.length, y = 0, z;
+  if(x == 1) {
+    return times[0];
+  }
+for (var i = 0; i < x; i++) {
+    z = times[i] * Math.pow(60, i);
+    y += z;
+}
+   y =  y/ 60;
+    return y;
+}
+
+function convertPaces(time) {
+  var i = 0; 
+  
+  var result = "";
+  var row = "";
+  var minutes = Math.floor(time);
+  var seconds = Math.round((time-minutes) *60);
+  if(seconds < 10) {
+    result += "" + minutes + ":0" + seconds + "\t";
+  }
+  else
+    result = "" + minutes + ":" + seconds + "\t";
+  
+  return result;
+  
+}  
+    
+  //calculate paces and return the string result
+function calculatePaces(minutes) { 
+    var text = "";
+    var i = 0;
+    var time = 0;
+    var _5k_mile_converion = 0.3218;
+    var _800m = 1.13;
+    var _3k = 0.94;
+    var _5k = .89;
+    var _6k = .88;
+    var _8k = .87;
+    var _10k = 0.86;
+    var vLT = .835;
+    var half_marathon = 0.81;
+    var marathon = 0.77;
+    var paces = [_800m, _3k, _5k, _6k, _8k, _10k, vLT, half_marathon, marathon];
+    var times = [9];
+    var pace = minutes * _5k_mile_converion;
+    
+    for (i = 0; i < paces.length; i++) { 
+      time = pace / paces[i];
+      times[i] = time;
+    }      
+    return times;
+}
+  
+  //validates time
+  //single number entered is assumed to be minutes
+  //if a colon is used, format is MM:SS
+  //hours are not allowed
+function validateTime(time) {
+  var re1 = /^[\d]{0,2}$/;
+  var re2 = /^[\d]{0,2}:?[\d]{2}$/;
+  
+  if (re1.test(time) || re2.test(time))
+    return true;
+  else
+    return false;
+}
+
+</script>
+
+
+<p id="demo"></p>
+	
+	
+	
 <table id="paces" style="width:100%">
   <tr>
 <th align="left">5k</th> 	<th align="left">800</th>	<th align="left">mile</th>	<th align="left">3k</th>	<th align="left">5k</th>	<th align="left">6k</th>	<th align="left">8k</th>	<th align="left">10k</th>	<th align="left">vLT</th>	<th align="left">½</th>	<th align="left">marathon</th>

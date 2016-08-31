@@ -86,9 +86,10 @@ function calculatePaces(minutes) {
     var vLT = .835;
     var half_marathon = 0.81;
     var marathon = 0.77;
+    var mile_conversion = 0.89;
     var paces = [_800m, _3k, _5k, _6k, _8k, _10k, vLT, half_marathon, marathon];
     var times = [9];
-    var pace = minutes * _5k_mile_converion;
+    var pace = minutes * _5k_mile_converion * mile_conversion;
     
     for (i = 0; i < paces.length; i++) { 
       time = pace / paces[i];

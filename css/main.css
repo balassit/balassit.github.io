@@ -45,19 +45,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-td {
-    color: #333;
-}
-th{
+
+table {
+   border: 1px solid #cccccc;
+   width: 100%; 
+} 
+td, th{
     text-align: left;
     color: #333;
-} 
-table#references td{
-    width: 33%; 
-} 
-table#references th{
-    width: 33%; 
+    padding: 15px 10px;
+    border-right: 1px solid #cccccc; 
 }
-table#paces tr:hover, table#paces tr:hover td, table#paces tr:active, table#paces tr:active td, table#paces td:selected {
-    background: #CC0000;
-}
+

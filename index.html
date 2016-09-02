@@ -1,200 +1,207 @@
 ---
 layout: default
-title: Blake Lassiter
+title: "Training"
+id: "training"
+custom_css:
+  - training/training.css
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Blake Lassiter!</h1>
-	<p><a href="/about">Read more about me</a></p>
+
+<h1>Training Guide</h1>
+
+<!------------------------------------>
+
 <h2>Pace Chart</h2>
-	
-<form id="form1">
+
+<p> Enter your 5k time in the field below, then press Submit. You may enter time in only minutes, or time formatted as MM:DD. </p>
+
+<form id="user_input">
 5k Time: <input name="time" type="text">
 </form>
 
 <button onclick="outputText()">Submit</button>
 
-<p id="demo"></p>
+<p id="time-output"></p>
 
 <table id="paces">
-
-<th>5k</th> 	<th>800</th>	<th>mile</th>	<th>3k</th>	<th>5k</th>	<th>6k</th>	<th>8k</th>	<th>10k</th>	<th>vLT</th>	<th>½</th>	<th>marathon</th>
-
-  <tr>
-<td>15:00</td> <td>3:48</td> <td>4:17</td> <td>4:34</td> <td>4:49</td> <td>4:52</td> <td>4:56</td> <td>5:00</td> <td>5:08</td> <td>5:18</td> <td>5:34</td></tr>
-<tr>                                                                                                                                                       
-<td>15:30</td> <td>3:55</td> <td>4:26</td> <td>4:43</td> <td>4:59</td> <td>5:02</td> <td>5:06</td> <td>5:09</td> <td>5:18</td> <td>5:28</td> <td>5:45</td></tr> 
-  <tr>
-<td>16:00</td> <td>4:03</td> <td>4:34</td> <td>4:52</td> <td>5:08</td> <td>5:12</td> <td>5:16</td> <td>5:19</td> <td>5:29</td> <td>5:39</td> <td>5:57</td> </tr>
-  <tr>
-<td>16:30</td> <td>4:10</td> <td>4:43</td> <td>5:01</td> <td>5:18</td> <td>5:22</td> <td>5:25</td> <td>5:29</td> <td>5:39</td> <td>5:50</td> <td>6:08</td> </tr>
-  <tr>
-<td>17:00</td> <td>4:18</td> <td>4:52</td> <td>5:10</td> <td>5:28</td> <td>5:31</td> <td>5:35</td> <td>5:39</td> <td>5:49</td> <td>6:00</td> <td>6:19</td> </tr>
-  <tr>
-<td>17:30</td> <td>4:26</td> <td>5:00</td> <td>5:19</td> <td>5:37</td> <td>5:41</td> <td>5:45</td> <td>5:49</td> <td>6:00</td> <td>6:11</td> <td>6:30</td> </tr>
-<tr>
-<td>18:00</td> <td>4:33</td> <td>5:09</td> <td>5:29</td> <td>5:47</td> <td>5:51</td> <td>5:55</td> <td>5:59</td> <td>6:10</td> <td>6:21</td> <td>6:41</td> </tr>
-  <tr>
-<td>18:30</td> <td>4:41</td> <td>5:17</td> <td>5:38</td> <td>5:57</td> <td>6:01</td> <td>6:05</td> <td>6:09</td> <td>6:20</td> <td>6:32</td> <td>6:52</td> </tr>
-  <tr>
-<td>19:00</td> <td>4:48</td> <td>5:26</td> <td>5:47</td> <td>6:06</td> <td>6:11</td> <td>6:15</td> <td>6:19</td> <td>6:31</td> <td>6:43</td> <td>7:04</td> </tr>
-  <tr>
-<td>19:30</td> <td>4:56</td> <td>5:35</td> <td>5:56</td> <td>6:16</td> <td>6:20</td> <td>6:25</td> <td>6:29</td> <td>6:41</td> <td>6:53</td> <td>7:15</td> </tr>
-  <tr>
-<td>20:00</td> <td>5:04</td> <td>5:43</td> <td>6:05</td> <td>6:26</td> <td>6:30</td> <td>6:35</td> <td>6:39</td> <td>6:51</td> <td>7:04</td> <td>7:26</td> </tr>
-  <tr>
-<td>20:30</td> <td>5:11</td> <td>5:52</td> <td>6:14</td> <td>6:35</td> <td>6:40</td> <td>6:44</td> <td>6:49</td> <td>7:01</td> <td>7:14</td> <td>7:37</td> </tr>
-  <tr>
-<td>21:00</td> <td>5:19</td> <td>6:00</td> <td>6:23</td> <td>6:45</td> <td>6:50</td> <td>6:54</td> <td>6:59</td> <td>7:12</td> <td>7:25</td> <td>7:48</td> </tr>
-  <tr>
-<td>21:30</td> <td>5:26</td> <td>6:09</td> <td>6:33</td> <td>6:55</td> <td>7:00</td> <td>7:04</td> <td>7:09</td> <td>7:22</td> <td>7:36</td> <td>8:00</td> </tr>
-  <tr>
-<td>22:00</td> <td>5:34</td> <td>6:18</td> <td>6:42</td> <td>7:04</td> <td>7:09</td> <td>7:14</td> <td>7:19</td> <td>7:32</td> <td>7:46</td> <td>8:10</td> </tr>
-  <tr>
-<td>22:30</td> <td>5:42</td> <td>6:26</td> <td>6:51</td> <td>7:14</td> <td>7:19</td> <td>7:24</td> <td>7:29</td> <td>7:43</td> <td>7:57</td> <td>8:22</td> </tr>
-  <tr>
-<td>23:00</td> <td>5:49</td> <td>6:35</td> <td>7:00</td> <td>7:24</td> <td>7:29</td> <td>7:34</td> <td>7:39</td> <td>7:53</td> <td>8:07</td> <td>8:33</td> </tr>
-  <tr>
-<td>23:30</td> <td>5:57</td> <td>6:43</td> <td>7:09</td> <td>7:33</td> <td>7:38</td> <td>7:44</td> <td>7:49</td> <td>8:03</td> <td>8:18</td> <td>8:44</td> </tr>
-  <tr>
-<td>24:00</td> <td>6:04</td> <td>6:52</td> <td>7:18</td> <td>7:43</td> <td>7:48</td> <td>7:54</td> <td>7:59</td> <td>8:13</td> <td>8:29</td> <td>8:55</td> </tr>
-  <tr>
-<td>24:30</td> <td>6:12</td> <td>7:01</td> <td>7:27</td> <td>7:53</td> <td>7:58</td> <td>8:03</td> <td>8:09</td> <td>8:24</td> <td>8:39</td> <td>9:06</td> </tr>
-  <tr>
-<td>25:00</td> <td>6:20</td> <td>7:09</td> <td>7:37</td> <td>8:02</td> <td>8:08</td> <td>8:13</td> <td>8:19</td> <td>8:34</td> <td>8:50</td> <td>9:17</td> </tr>
-  <tr>
-<td>25:30</td> <td>6:27</td> <td>7:18</td> <td>7:46</td> <td>8:12</td> <td>8:17</td> <td>8:23</td> <td>8:29</td> <td>8:44</td> <td>9:00</td> <td>9:29</td> </tr>
-   <tr>
-<td>26:00</td> <td>6:35</td> <td>7:26</td> <td>7:55</td> <td>8:22</td> <td>8:27</td> <td>8:33</td> <td>8:39</td> <td>8:55</td> <td>9:11</td> <td>9:40</td> </tr>
-  <tr>
-<td>26:30</td> <td>6:42</td> <td>7:35</td> <td>8:04</td> <td>8:31</td> <td>8:37</td> <td>8:43</td> <td>8:49</td> <td>9:05</td> <td>9:22</td> <td>9:51</td> </tr>
-  <tr>
-<td>27:00</td> <td>6:50</td> <td>7:43</td> <td>8:13</td> <td>8:41</td> <td>8:47</td> <td>8:53</td> <td>8:59</td> <td>9:15</td> <td>9:32</td> <td>10:02</td> </tr>
-  <tr>
-<td>27:30</td> <td>6:58</td> <td>7:52</td> <td>8:22</td> <td>8:50</td> <td>8:57</td> <td>9:03</td> <td>9:09</td> <td>9:25</td> <td>9:43</td> <td>10:13</td> </tr>
-  <tr>
-<td>28:00</td> <td>7:05</td> <td>8:01</td> <td>8:31</td> <td>9:00</td> <td>9:06</td> <td>9:13</td> <td>9:19</td> <td>9:36</td> <td>9:54</td> <td>10:24</td> </tr>
-  </tr>
+    <th>5k</th><th>800</th><th>Mile</th><th>3k</th><th>5k</th><th>6k</th><th>8k</th><th>10k</th><th>vLT</th><th>Half marathon</th><th>Marathon</th>
+    <tr>
+        <td>15:00</td><td>3:48</td><td>4:18</td><td>4:34</td><td>4:50</td><td>4:53</td><td>4:56</td><td>5:00</td><td>5:09</td><td>5:18</td><td>5:35</td></tr><td>15:30</td><td>3:55</td><td>4:26</td><td>4:43</td><td>4:59</td><td>5:02</td><td>5:06</td><td>5:09</td><td>5:18</td><td>5:28</td><td>5:45</td>
+    </tr>
+    <tr>
+        <td>15:30</td><td>3:56</td><td>4:26</td><td>4:43</td><td>4:59</td><td>5:03</td><td>5:06</td><td>5:10</td><td>5:19</td><td>5:29</td><td>5:46</td>
+    </tr>
+    <tr>
+        <td>16:00</td><td>4:03</td><td>4:35</td><td>4:52</td><td>5:09</td><td>5:12</td><td>5:16</td><td>5:20</td><td>5:29</td><td>5:39</td><td>5:57</td>
+    </tr>
+    <tr>
+        <td>16:30</td><td>4:11</td><td>4:44</td><td>5:02</td><td>5:19</td><td>5:22</td><td>5:26</td><td>5:30</td><td>5:40</td><td>5:50</td><td>6:08</td>
+    </tr>
+    <tr>
+    <td>17:00</td><td>4:19</td><td>4:52</td><td>5:11</td><td>5:28</td><td>5:32</td><td>5:36</td><td>5:40</td><td>5:50</td><td>6:01</td><td>6:19</td>
+    </tr>
+    <tr>
+        <td>17:30</td><td>4:26</td><td>5:01</td><td>5:20</td><td>5:38</td><td>5:42</td><td>5:46</td><td>5:50</td><td>6:00</td><td>6:11</td><td>6:31</td>
+    </tr>
+    <tr>
+        <td>18:00</td><td>4:34</td><td>5:09</td><td>5:29</td><td>5:48</td><td>5:51</td><td>5:56</td><td>6:00</td><td>6:10</td><td>6:22</td><td>6:42</td>
+    </tr>
+    <tr>
+        <td>18:30</td><td>4:41</td><td>5:18</td><td>5:38</td><td>5:57</td><td>6:01</td><td>6:05</td><td>6:10</td><td>6:21</td><td>6:32</td><td>6:53</td>
+    </tr>
+    <tr>
+        <td>19:00</td><td>4:49</td><td>5:26</td><td>5:47</td><td>6:07</td><td>6:11</td><td>6:15</td><td>6:20</td><td>6:31</td><td>6:43</td><td>7:04</td>
+    </tr>
+    <tr>
+        <td>19:30</td><td>4:57</td><td>5:35</td><td>5:56</td><td>6:17</td><td>6:21</td><td>6:25</td><td>6:30</td><td>6:41</td><td>6:54</td><td>7:15</td>
+    </tr>
+    <tr>
+        <td>20:00</td><td>5:04</td><td>5:44</td><td>6:06</td><td>6:26</td><td>6:31</td><td>6:35</td><td>6:40</td><td>6:52</td><td>7:04</td><td>7:26</td>
+    </tr>
+    <tr>
+        <td>20:30</td><td>5:12</td><td>5:52</td><td>6:15</td><td>6:36</td><td>6:40</td><td>6:45</td><td>6:50</td><td>7:02</td><td>7:15</td><td>7:37</td>
+    </tr>
+    <tr>
+        <td>21:00</td><td>5:19</td><td>6:01</td><td>6:24</td><td>6:45</td><td>6:50</td><td>6:55</td><td>7:00</td><td>7:12</td><td>7:26</td><td>7:49</td>
+    </tr>
+    <tr>
+        <td>21:30</td><td>5:27</td><td>6:09</td><td>6:33</td><td>6:55</td><td>7:00</td><td>7:05</td><td>7:10</td><td>7:22</td><td>7:36</td><td>8:00</td>
+    </tr>
+    <tr>
+        <td>22:00</td><td>5:35</td><td>6:18</td><td>6:42</td><td>7:05</td><td>7:10</td><td>7:15</td><td>7:20</td><td>7:33</td><td>7:47</td><td>8:11</td>
+    </tr>
+    <tr>
+        <td>22:30</td><td>5:42</td><td>6:27</td><td>6:51</td><td>7:14</td><td>7:19</td><td>7:24</td><td>7:30</td><td>7:43</td><td>7:57</td><td>8:22</td>
+    </tr>
+    <tr>
+        <td>23:00</td><td>5:50</td><td>6:35</td><td>7:00</td><td>7:24</td><td>7:29</td><td>7:34</td><td>7:40</td><td>7:53</td><td>8:08</td><td>8:33</td>
+    </tr>
+    <tr>
+        <td>23:30</td><td>5:57</td><td>6:44</td><td>7:10</td><td>7:34</td><td>7:39</td><td>7:44</td><td>7:50</td><td>8:04</td><td>8:19</td><td>8:44</td>
+    </tr>
+    <tr>
+        <td>24:00</td><td>6:05</td><td>6:52</td><td>7:19</td><td>7:43</td><td>7:49</td><td>7:54</td><td>8:00</td><td>8:14</td><td>8:29</td><td>8:56</td>
+    </tr>
 </table>
-
 <script>
 
-//create table
-function constructTable(headers, values) {
-  
-  var i;
-  var x = document.createElement("TABLE");
-  x.setAttribute("id", "user_paces");
-  document.getElementById("demo").appendChild(x);
-
-  //table header
-  var y;
-  //table headers
-  y = document.createElement("TR");
-  y.setAttribute("id", "TR1");
-
-  for(i = 0; i < headers.length;i++) {
-    var y= document.createElement("TH");
-    y.setAttribute("id", "myTH");
-    document.getElementById("user_paces").appendChild(y);
-    var id = "myTH" + i; 
-    y.setAttribute("id", id);
-    var t = document.createTextNode(headers[i]);
-    y.appendChild(t);
-    document.getElementById("user_paces").appendChild(y);
-  }
-
-  //table row
-  y = document.createElement("TR");
-  y.setAttribute("id", "TR2");
-  document.getElementById("user_paces").appendChild(y);  
-
-  //create table data
-  for(i = 0; i < values.length; i++) {
-    var z = document.createElement("TD");
-    var t = document.createTextNode(values[i]);
-    z.appendChild(t);
-    y.appendChild(z);
-  }
-    document.getElementById("user_paces").appendChild(y);
-}
-
 function outputText() {
-  //remove exisiting user_table, if exist
-  var elem = document.getElementById("user_paces");
-  if(elem != null) {
-    elem.parentNode.removeChild(elem);
-  }
-
-
-  var table, i, minutes,y,name,a,b,answer, times;
-  var row = "";
-  x=document.getElementById("form1") ;
-  y=x.elements["time"].value;
-  table = "";
-  if(validateTime(y)) {
-    var headers = [11];
-    var values = [11];
-    headers = ["5k", "800", "mile", "3k", "5k", "6k", "8k", "10k", "vLT", "1/2", "marathon"];
-
-    minutes = timeToSeconds(y);
-    times = calculatePaces(minutes);
-    //save values of times in correct format
-    values[0] = convertPaces(minutes);
-    for(i = 0; i < times.length; i++) {
-      var temp = i+1;
-      values[temp] = convertPaces(times[i]);
+    document.getElementById("time-output").innerHTML="";
+    //remove exisiting user_table, if exist
+    var elem = document.getElementById("user_paces");
+    if(elem != null) {
+      elem.parentNode.removeChild(elem);
     }
 
-   //construct table
-    constructTable(headers, values);
-    return true;
-  }
-  else {
-    document.getElementById("demo").innerHTML="Invalid time";
-   // document.write("Invalid time");
-  }
+
+    var table, i, minutes, y, name, a, b, answer, times;
+    var row = "";
+    x=document.getElementById("user_input") ;
+    y=x.elements["time"].value;
+    table = "";
+    if(validateTime(y)) {
+        var headers = [11];
+        var values = [11];
+        headers = ["5k", "800", "Mile", "3k", "5k", "6k", "8k", "10k", "vLT", "Half marathon", "Marathon"];
+
+        minutes = timeToSeconds(y);
+        times = calculatePaces(minutes);
+        //save values of times in correct format
+        values[0] = convertPaces(minutes);
+        for(i = 0; i < times.length; i++) {
+            var temp = i+1;
+            values[temp] = convertPaces(times[i]);
+        }
+
+        //construct table
+        constructTable(headers, values);
+        return true;
+    }
+    else {
+        document.getElementById("time-output").innerHTML="Invalid time";
+    }
+}
+
+function constructTable(headers, values) {
+    var i;
+    var x = document.createElement("TABLE");
+    x.setAttribute("id", "user_paces");
+    document.getElementById("time-output").appendChild(x);
+
+    //table header
+    var y;
+    //table headers
+    y = document.createElement("TR");
+    y.setAttribute("id", "TR1");
+
+    for(i = 0; i < headers.length; i++) {
+        var y= document.createElement("TH");
+        y.setAttribute("id", "myTH");
+        document.getElementById("user_paces").appendChild(y);
+        var id = "myTH" + i; 
+        y.setAttribute("id", id);
+        var t = document.createTextNode(headers[i]);
+        y.appendChild(t);
+        document.getElementById("user_paces").appendChild(y);
+    }
+
+    //table row
+    y = document.createElement("TR");
+    y.setAttribute("id", "TR2");
+    document.getElementById("user_paces").appendChild(y);  
+
+    //create table data
+    for(i = 0; i < values.length; i++) {
+        var z = document.createElement("TD");
+        var t = document.createTextNode(values[i]);
+        z.appendChild(t);
+        y.appendChild(z);
+    }
+    document.getElementById("user_paces").appendChild(y);
 }
   
-  //takes the string time input
-  //converts to a number of seconds
-  //then divides seconds into mintutes
+    /* takes the string time input 
+       converts to a number of seconds
+       then divides seconds into mintutes
+     */
 function timeToSeconds(time) {
-var times = time.split(":");
-times.reverse();
-var x = times.length, y = 0, z;
-  if(x == 1) {
-    return times[0];
-  }
-for (var i = 0; i < x; i++) {
-    z = times[i] * Math.pow(60, i);
-    y += z;
-}
-   y =  y/ 60;
+    var times = time.split(":");
+    times.reverse();
+    var x = times.length, y = 0, z;
+
+    if(x == 1) {
+        return times[0];
+    }
+
+    for (var i = 0; i < x; i++) {
+        z = times[i] * Math.pow(60, i);
+        y += z;
+    }
+
+    y =  y/ 60;
+
     return y;
 }
 
 function convertPaces(time) {
-  var i = 0; 
+    var i = 0;
+    var result = "";
+    var row = "";
+    var minutes = Math.floor(time);
+    var seconds = Math.round((time-minutes) *60);
+    if(seconds == 60) {
+        minutes += 1;
+        seconds = 0;
+    }  
+    if(seconds < 10) {
+      result += "" + minutes + ":0" + seconds + "\t";
+    }
+    else
+      result = "" + minutes + ":" + seconds + "\t";
   
-  var result = "";
-  var row = "";
-  var minutes = Math.floor(time);
-  var seconds = Math.round((time-minutes) *60);
-  if(seconds == 60) {
-    minutes += 1;
-    seconds = 0;
-  }  
-  if(seconds < 10) {
-    result += "" + minutes + ":0" + seconds + "\t";
-  }
-  else
-    result = "" + minutes + ":" + seconds + "\t";
-  
-  return result;
-  
+    return result;
 }  
     
-  //calculate paces and return the string result
+//calculate paces and return the string result
 function calculatePaces(minutes) { 
     var text = "";
     var i = 0;
@@ -216,25 +223,20 @@ function calculatePaces(minutes) {
     var pace = minutes * _5k_mile_converion * mile_conversion;
     
     for (i = 0; i < paces.length; i++) { 
-      time = pace / paces[i];
-      times[i] = time;
+        time = pace / paces[i];
+        times[i] = time;
     }      
     return times;
 }
   
-  //validates time
-  //single number entered is assumed to be minutes
-  //if a colon is used, format is MM:SS
-  //hours are not allowed
+//validates time
+//single number entered is assumed to be minutes
+//if a colon is used, format is MM:SS
+//hours are not allowed
 function validateTime(time) {
-  var re1 = /^[\d]{0,2}$/;
-  var re2 = /^[\d]{0,2}:?[\d]{2}$/;
+    var re1 = /^[\d]{1,2}$/;
+    var re2 = /^[\d]{1,2}:{1}[\d]{2}$/;
   
-  if (re1.test(time) || re2.test(time))
-    return true;
-  else
-    return false;
+    return re1.test(time) || re2.test(time);
 }
-
 </script>
-</div><!-- /.blurb -->

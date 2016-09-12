@@ -1,5 +1,4 @@
-html {
-  height: 100%;
+ght: 100%;
 }
 body {
     margin: 60px auto;
@@ -51,16 +50,5 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-}
-
-table {
-   border: 1px solid #cccccc;
-   width: 100%; 
-} 
-td, th{
-    text-align: center;
-    color: #333;
-    padding: 15px 10px;
-    border-right: 1px solid #cccccc;
 }
 

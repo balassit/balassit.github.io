@@ -23,20 +23,20 @@
 			
 			<h1>Training Guide</h1>
 
-<!------------------------------------>
-
 <h2>Pace Chart</h2>
 
-<p> Enter your 5k time in the field below, then press Submit. You may enter time in only minutes, or time formatted as MM:DD. </p>
+<p> Enter your 5k time in the field below, then press Submit. You may enter time in the format MM:SS or H:MM:SS.</p>
 
-5k Time: <input id="user_input" name="time" type="text">
+5k Time: <input id="time-input" type="text">
 
-<button onclick="outputText(user_input.value)">Submit</button>
+<button onclick="showPaces()">Submit</button>
 
-<p id="time-output"></p>
+<div id="paces-output"></div>
 
-<table id="paces">
-    <th>5k</th><th>800</th><th>Mile</th><th>3k</th><th>5k</th><th>6k</th><th>8k</th><th>10k</th><th>vLT</th><th>Half marathon</th><th>Marathon</th>
+<table>
+    <tr>
+        <th>5K</th><th>800</th><th>Mile</th><th>3K</th><th>5K</th><th>6K</th><th>8K</th><th>10K</th><th>vLT</th><th>Half marathon</th><th>Marathon</th>
+    </tr>
     <tr>
         <td>15:00</td><td>3:48</td><td>4:18</td><td>4:34</td><td>4:50</td><td>4:53</td><td>4:56</td><td>5:00</td><td>5:09</td><td>5:18</td><td>5:35</td></tr><td>15:30</td><td>3:55</td><td>4:26</td><td>4:43</td><td>4:59</td><td>5:02</td><td>5:06</td><td>5:09</td><td>5:18</td><td>5:28</td><td>5:45</td>
     </tr>

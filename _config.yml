@@ -23,5 +23,8 @@ page_data:
 
   - title: "Training"
     id: "training"
-    url: "training"
- 
+    url: ""
+
+  - title: "Pace Chart"
+    id: "pace-chart"
+    url: "/training"

@@ -1,3 +1,27 @@
 name: Blake Lassiter
+baseurl: ""
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+page_data:
+
+  - title: "Home"
+    id: "home"
+    url: ""
+
+  - title: "About"
+    id: "contact"
+    url: ""
+
+  - title: "Blog"
+    id: "blog"
+    url: ""
+
+  - title: "Resume"
+    id: "resume"
+    url: ""
+
+  - title: "Training"
+    id: "training"
+    url: "training"
+ 

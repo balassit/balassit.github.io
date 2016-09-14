@@ -1,7 +1,7 @@
+title: Blake Lassiter Website
 name: Blake Lassiter
 baseurl: ""
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
 
 page_data:
 
@@ -11,20 +11,20 @@ page_data:
 
   - title: "About"
     id: "contact"
-    url: ""
+    url: "about"
 
   - title: "Blog"
     id: "blog"
-    url: ""
+    url: "blog"
 
   - title: "Resume"
     id: "resume"
-    url: ""
+    url: "resume"
 
   - title: "Training"
     id: "training"
-    url: ""
+    url: "training"
 
   - title: "Pace Chart"
     id: "pace-chart"
-    url: "/training"
+    url: "training/pace-chart"

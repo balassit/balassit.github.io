@@ -123,7 +123,7 @@ function timeStringToSeconds(timeString) {
     var minutes = parseInt(parts[1]);
 
     var totalSeconds = 0;
-    totalSeconds += seconds;
+    totalSeconds = seconds;
     totalSeconds += minutes * 60;
 
     if (parts.length == 3) {
@@ -154,7 +154,7 @@ function secondsToTimeString(timeSeconds) {
     var hours = timeSeconds;
 
     var secondsPadded = (seconds < 10 ? "0" : "") + seconds;
-    var minutesPadded = (minutes < 10 ? "0" : "") + seconds;
+    var minutesPadded = (minutes < 10 ? "0" : "") + minutes;
 
     if (hours > 0) {
         return hours + ":" + minutesPadded + ":" + secondsPadded;
@@ -176,5 +176,5 @@ function secondsToTimeString(timeSeconds) {
  * @return true if the string is formatted like a time
  */
 function isValidTime(time) {
-    return /^([0-9]:[0-5][0-9]|[0-5]*[0-9]):[0-5][0-9]$/.test(time);
+    return /^([0-9]:[0-5][0-9]|[0-5]?[0-9]):[0-5][0-9]$/.test(time);
 }

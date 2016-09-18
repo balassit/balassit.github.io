@@ -3,7 +3,7 @@ html {
 }
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 87%;
     min-height: 100%;
 }
 nav ul, footer ul {
@@ -18,7 +18,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #6b6b6b;
 }
 a:hover {
     text-decoration: underline;
@@ -37,7 +37,7 @@ h1 {
 p {
     font-size: 1em;
     line-height: 1.4em;
-    color: #333;
+    color: #373D3F;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -51,5 +51,17 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+/* Small screens */
+@media screen and (max-width:375px) {
+    header{
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 376px) {
+    nav {
+        margin-top: 20px;
+    }
 }
 

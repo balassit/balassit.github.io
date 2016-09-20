@@ -19,7 +19,7 @@ page_data:
 
   - title: "Resume"
     id: "resume"
-    url: "resume"
+    url: "pdf/web/viewer.html?file=Resume.pdf"
 
   - title: "Training"
     id: "training"

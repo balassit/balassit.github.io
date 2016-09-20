@@ -18,7 +18,7 @@ page_data:
     url: "blog"
 
   - title: "Resume"
-    id: "resume"
+    id: "pdf/web/viewer.html?file=Resume.pdf"
     url: "pdf/web/viewer.html?file=Resume.pdf"
 
   - title: "Training"

@@ -1,4 +1,13 @@
 /**
+ * User selection for US or metric conversion
+ * @return 0 if checkbox is true, 1 for false.
+ */
+function getUnitType(cb) {
+    display("Clicked, new value = " + cb.checked);
+    return cb.checked;
+}
+
+/**
  * A high-level function that takes the user's 5K time as input, calculates
  * workout paces, and generates and displays the results in a table.
  */
@@ -6,7 +15,7 @@ function showPaces() {
     // Get the user's 5K time input
     var timeInput = document.getElementById("time-input");
     var pacesOutput = document.getElementById("paces-output");
-
+    
     pacesOutput.innerHTML = "";
 
     var time = timeInput.value;
@@ -74,6 +83,8 @@ function buildPacesTable(paces) {
 
 /**
  * Calculates several paces based on 5K time. Returns a list of distances and paces.
+ * Metric will base value on 1k split.
+ * Non-metric (US) will base value on mile time
  *
  * Returns a list of objects with distance and pace attributes:
  * [ {distance: "800", pace: "3:48"},
@@ -85,8 +96,14 @@ function buildPacesTable(paces) {
  * @return a list of distances and paces
  */
 function calculatePaces(time) {
+    //the value for which time is related to distance. Metric/US standard (1k or mile).
+    var unit = getUnitType();
     // Mile pace during a 5K
-    var _5kMilePace = time * (1609 / 5000);
+    var _5kMilePace;
+    if(unit == false)
+        _5kMilePace = time / 5;
+    else
+         _5kMilePace = time * (1609 / 5000);
     // Mile race pace
     var milePace = _5kMilePace * .89;
 

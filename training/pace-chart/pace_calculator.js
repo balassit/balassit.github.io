@@ -3,7 +3,6 @@
  * @return 0 if checkbox is true, 1 for false.
  */
 function getUnitType(cb) {
-    display("Clicked, new value = " + cb.checked);
     return cb.checked;
 }
 

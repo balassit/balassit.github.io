@@ -3,7 +3,9 @@
  * @return 0 if checkbox is true, 1 for false.
  */
 function getUnitType(cb) {
-    return cb.checked;
+    if (document.getElementById('unit-check').checked) 
+        return true;
+    return false;
 }
 
 /**

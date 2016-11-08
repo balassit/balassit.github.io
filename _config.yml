@@ -10,7 +10,7 @@ page_data:
     url: ""
 
   - title: "About"
-    id: "contact"
+    id: "about"
     url: "about"
 
   - title: "Blog"

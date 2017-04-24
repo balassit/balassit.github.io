@@ -28,3 +28,7 @@ page_data:
   - title: "Pace Chart"
     id: "pace-chart"
     url: "training/pace-chart"
+
+  - title: "Readings"
+    id: "readings"
+    url: "readings"

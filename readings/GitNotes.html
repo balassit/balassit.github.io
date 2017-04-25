@@ -25,7 +25,7 @@ just a link to the previous identical file already stored.
 
 
 - Operations almost instant because on latency of network
-Can commit work until getting a netowrk connection to upload.
+- Can commit work until getting a network connection to upload.
 
 - As in any VCS, you can lose or mess up changes you haven’t
 committed yet; but after you commit a snapshot into Git,
@@ -192,29 +192,35 @@ This config file can only be changed by git config -f <file> as an admin.
     `git tag -a {tag-name} -m "comment"` to create a tag
 
     ##### Sharing Tags
+
     `git push`doesn't trasnfer tags to remote servers. You have to explicitly push tags using `git push origin [tag-name]`
 
     ## Git Branching
     Branching means getting to diverge from the main line of development and continue to do work without it.
 
     #### Creating a Branch
+
     `git branch [branch-name]` will create a new pointer to the same commit you're currently on.
     `HEAD`is a pointer to local branch you are currently on. You stay on `HEAD` after creating a branch.
 
     #### Switching Branches
+
     `git checkout [branch-name]` moves the HEAD to point to another branch.
 
     When merging 2 commits that can be reached by following the first commit's history,
     Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
 
     #### Delete a branch
+
     `git branch -d hotfix` deletes a branch from local machine.
 
     #### Merge Commit
+
     When a branch has diverged from another and is merged back in, a special commit is made from a
     three way merge.
 
     #### Merge Conflict
+    
     When there is a merge conflict, there is an indication of the differences that you must resolve.
     The following is what is held in the branch you are currently in.
 

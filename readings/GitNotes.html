@@ -37,11 +37,11 @@ id: "readings"
 <li><p>Every time you commit, or save the state of your project in Git, <br>
 it basically takes a picture of what all your files look like at <br>
 that moment and stores a reference to that snapshot. <br>
-If the file has not changed, Git doesnâ€™t store the file again,  <br>
+If the file has not changed, Git doesn’t store the file again,  <br>
 just a link to the previous identical file already stored.</p></li>
 <li><p>Operations almost instant because on latency of network <br>
 Can commit work until getting a netowrk connection to upload.</p></li>
-<li><p>As in any VCS, you can lose or mess up changes you havenâ€™t <br>
+<li><p>As in any VCS, you can lose or mess up changes you haven’t <br>
 committed yet; but after you commit a snapshot into Git,  <br>
 it is very difficult to lose, especially if you regularly  <br>
 push your database to another repository.</p></li>
@@ -73,24 +73,24 @@ push your database to another repository.</p></li>
 <li><p>These variables can be stored in 3 locations:</p>
 
 <ol><li><b>/etc/gitconfig </b> values for every user on the system and all repositories. <br>
-If you pass the option <b>â€“system</b> it reads and writes from this file specifically.</li>
-<li><b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> â€“global</b> option <br>
+If you pass the option <b>–system</b> it reads and writes from this file specifically.</li>
+<li><b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> –global</b> option <br>
 <ul><li>system-level config file in C:\ProgramData\Git\config on Windows.  <br>
 This config file can only be changed by git config -f  as an admin.</li></ul></li>
-<li><b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry youâ€™re currently using. <br>
+<li><b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry you’re currently using. <br>
 Specific to that single repository.</li></ol>
 
 <p>Specify the following information which will be used in each commit message.  <br>
 You can override for individual projects by running the command from the project <br>
 repository without the global option.</p>
 
-<p>git config â€“global user.name â€œJohn Doeâ€ <br>
-git config â€“global user.email johndoe@example.com</p>
+<p>git config –global user.name “John Doe” <br>
+git config –global user.email johndoe@example.com</p>
 
 <p>Can specify default text editor that will be used when Git needs you to type a message.</p>
 
-<p>git config â€“global core.editor â€œâ€˜C:/Program Files/Notepad++/notepad++.exeâ€™ -multiInst <br>
- -nosessionâ€</p></li>
+<p>git config –global core.editor “‘C:/Program Files/Notepad++/notepad++.exe’ -multiInst <br>
+ -nosession”</p></li>
 </ul>
 
 
@@ -186,7 +186,7 @@ before doing the commit, letting you skip the <b>git add</b> part. </p>
 <p><b>git rm</b> to remove tracked files (remove from staging area) then commit change. <br>
 Deleting a local file will place the it in unstaged.</p>
 
-<p>To stop tracking a file use <b>git rm â€“cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b> <br>
+<p>To stop tracking a file use <b>git rm –cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b> <br>
 Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b></p>
 
 
@@ -208,49 +208,53 @@ Use <b> git mv file_from file_to </b> to change the name of a file instead of st
 </tr>
 <tr>
   <td>-{n}</td>
-  <td align="center">limit output to last â€˜nâ€™ entries</td>
+  <td align="center">limit output to last ‘n’ entries</td>
 </tr>
 <tr>
-  <td>â€“stat</td>
+  <td>–stat</td>
   <td align="center">abbreviated stats for each commit</td>
 </tr>
 <tr>
-  <td>â€“pretty={oneline, short, full, fuller}</td>
+  <td>–pretty={oneline, short, full, fuller}</td>
   <td align="center">change log output to format</td>
 </tr>
 <tr>
-  <td>â€“pretty=format:â€{}â€</td>
+  <td>–pretty=format:”{}”</td>
   <td align="center">specify our own log output format</td>
 </tr>
 <tr>
-  <td>â€“graph</td>
+  <td>–graph</td>
   <td align="center">shows ASCII graph of branch and merge history</td>
 </tr>
 <tr>
-  <td>â€“since={ 2 days / 2.weeks / etc}</td>
+  <td>–since={ 2 days / 2.weeks / etc}</td>
   <td align="center">list commits in last x time period</td>
 </tr>
 <tr>
-  <td>â€“since, â€“after</td>
+  <td>–since, –after</td>
   <td align="center">Limit the commits to those made after the specified date.</td>
 </tr>
 <tr>
-  <td>â€“until, â€“before</td>
+  <td>–until, –before</td>
   <td align="center">Limit the commits to those made before the specified date.</td>
 </tr>
 <tr>
-  <td>â€“author</td>
-  <td align="center">Only show commits in which the author entry matches the</td>
+  <td>–author</td>
+  <td align="center">Only show commits in which the author entry matches the specified string.</td>
+</tr>
+<tr>
+  <td>–committer</td>
+  <td align="center">Only show commits in which the committer entry matches the specified string.</td>
+</tr>
+<tr>
+  <td>–grep</td>
+  <td align="center">Only show commits with a commit message containing the string</td>
+</tr>
+<tr>
+  <td>-S{text}</td>
+  <td align="center">Only show commits adding or removing code matching the string</td>
 </tr>
 </tbody></table>
-
-
-<p>specified string.| <br>
-|â€“committer | Only show commits in which the committer entry matches the <br>
-specified string.| <br>
-|â€“grep | Only show commits with a commit message containing the string| <br>
-|-S{text}  |Only show commits adding or removing code matching the string|</p>
-
 
 
 <h4 id="format-options">Format Options</h4>
@@ -296,7 +300,7 @@ specified string.| <br>
 </tr>
 <tr>
   <td>%ad</td>
-  <td align="center">Author date (format respects the â€“date=option)</td>
+  <td align="center">Author date (format respects the –date=option)</td>
 </tr>
 <tr>
   <td>%ar</td>
@@ -325,12 +329,10 @@ specified string.| <br>
 </tbody></table>
 
 
-
-
 <h4 id="undoing-things">Undoing Things</h4>
 
-<p><b> git commit â€“amend </b> try to commit again, used to change files or message of commit. <br>
-Unmodify a file using <b>git checkout â€“ file </b>. Danger of losing changes. Suggest using git stash unless sure that you donâ€™t need changes.</p>
+<p><b> git commit –amend </b> try to commit again, used to change files or message of commit. <br>
+Unmodify a file using <b>git checkout – file </b>. Danger of losing changes. Suggest using git stash unless sure that you don’t need changes.</p>
 
 
 
@@ -344,7 +346,7 @@ Unmodify a file using <b>git checkout â€“ file </b>. Danger of losing chang
 
 <h4 id="fetching-pulling-and-pushing-your-remotes">Fetching Pulling and Pushing Your Remotes</h4>
 
-<p><b>git fetch [remote-name]</b> - pull down data from remote project you donâ€™t have yet</p>
+<p><b>git fetch [remote-name]</b> - pull down data from remote project you don’t have yet</p>
 
 <p><b>git pull</b> - once you are tracking a repo to fetch and merge</p>
 
@@ -360,13 +362,13 @@ You can add tas after a commit is made</p>
 
 <p><b>git tag</b> - lists available tags in alphabetical order</p>
 
-<p><b>git tag -a {tag-name} -m â€œcommentâ€</b> - create a tag</p>
+<p><b>git tag -a {tag-name} -m “comment”</b> - create a tag</p>
 
 
 
 <h5 id="sharing-tags">Sharing Tags</h5>
 
-<p><b>git push</b> doesnâ€™t trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b></p>
+<p><b>git push</b> doesn’t trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b></p>
 
 
 
@@ -378,7 +380,7 @@ You can add tas after a commit is made</p>
 
 <h4 id="creating-a-branch">Creating a Branch</h4>
 
-<p><b>git branch [branch-name]</b> will create a new pointer to the same commit youâ€™re currently on. <br>
+<p><b>git branch [branch-name]</b> will create a new pointer to the same commit you’re currently on. <br>
 <b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.</p>
 
 
@@ -387,8 +389,8 @@ You can add tas after a commit is made</p>
 
 <p><b>git checkout [branch-name]</b> moves the HEAD to point to another branch.</p>
 
-<p>When merging 2 commits that can be reached by following the first commitâ€™s history,  <br>
-Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a â€œfast forwardâ€.</p>
+<p>When merging 2 commits that can be reached by following the first commit’s history,  <br>
+Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a “fast forward”.</p>
 
 
 
@@ -409,12 +411,9 @@ three way merge.</p>
 
 <p>When there is a merge conflict, there is an indication of the differences that you must resolve.  <br>
 The following is what is held in the branch you are currently in. <br>
-â€œâ€œ <br>
-&lt;&lt;&lt;&lt;</p>
+&lt;&lt;&lt;&lt;&lt; HEAD</p>
 
-<h1 id="content">â€¦â€¦.content</h1>
-
-<p>â€œâ€œ</p>
+<h1 id="content">…….content</h1>
 
 <p>The following is below <b>HEAD</b> and is from the branch that you attempted to merge <br>
 <code>.......content <br>

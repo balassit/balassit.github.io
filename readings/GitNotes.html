@@ -3,6 +3,7 @@ layout: default
 title: "Readings"
 id: "readings"
 ---
+
 <h2 id="version-control">Version Control</h2>
 
 
@@ -26,7 +27,7 @@ id: "readings"
 <h4 id="svn-structure">SVN Structure</h4>
 
 <ul>
-<li>List of file based changes</li>
+    <li>List of file based changes</li>
 </ul>
 
 
@@ -34,34 +35,32 @@ id: "readings"
 <h4 id="git-structure">Git Structure</h4>
 
 <ul>
-<li><p>Every time you commit, or save the state of your project in Git, <br>
-it basically takes a picture of what all your files look like at <br>
-that moment and stores a reference to that snapshot. <br>
-If the file has not changed, Git doesn’t store the file again,  <br>
-just a link to the previous identical file already stored.</p></li>
-<li><p>Operations almost instant because on latency of network <br>
-Can commit work until getting a netowrk connection to upload.</p></li>
-<li><p>As in any VCS, you can lose or mess up changes you haven’t <br>
-committed yet; but after you commit a snapshot into Git,  <br>
-it is very difficult to lose, especially if you regularly  <br>
-push your database to another repository.</p></li>
+    <li>
+        <p>Every time you commit, or save the state of your project in Git, <br> it basically takes a picture of what all your files look like at <br> that moment and stores a reference to that snapshot. <br> If the file has not changed, Git doesn’t store
+            the file again, <br> just a link to the previous identical file already stored.</p>
+    </li>
+    <li>
+        <p>Operations almost instant because on latency of network <br> Can commit work until getting a netowrk connection to upload.</p>
+    </li>
+    <li>
+        <p>As in any VCS, you can lose or mess up changes you haven’t <br> committed yet; but after you commit a snapshot into Git, <br> it is very difficult to lose, especially if you regularly <br> push your database to another repository.</p>
+    </li>
 </ul>
 
-<p>Git has three main states that your files can reside in: Committed, modified, and staged. <br>
- 1. Committed means that the data is safely stored in your local database. <br>
- 2. Modified means that you have changed the file but have not committed it to your database yet <br>
- 3. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</p>
+<p>Git has three main states that your files can reside in: Committed, modified, and staged. <br> 1. Committed means that the data is safely stored in your local database. <br> 2. Modified means that you have changed the file but have not committed it to
+    your database yet <br> 3. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</p>
 
 
 
 <h4 id="install-and-setup-of-git">Install and Setup of Git</h4>
 
 <ul>
-<li><p>Ubuntu</p>
-
-<p>sudo apt-get install git-all</p></li>
-<li>Windows <br>
-   <a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></li>
+    <li>
+        <p>Ubuntu</p>
+        <pre><code>sudo apt-get install git-all</pre></code>
+    </li>
+    <li>Windows <br>
+        <a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></li>
 </ul>
 
 
@@ -69,28 +68,29 @@ push your database to another repository.</p></li>
 <h4 id="configure-system-environment">Configure System Environment</h4>
 
 <ul>
-<li><b>git config </b>lets you configure variales that control all aspects of how Git looks and operates. </li>
-<li><p>These variables can be stored in 3 locations:</p>
+    <li><b>git config </b>lets you configure variales that control all aspects of how Git looks and operates. </li>
+    <li>
+        <p>These variables can be stored in 3 locations:</p>
 
-<ol><li><b>/etc/gitconfig </b> values for every user on the system and all repositories. <br>
-If you pass the option <b>–system</b> it reads and writes from this file specifically.</li>
-<li><b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> –global</b> option <br>
-<ul><li>system-level config file in C:\ProgramData\Git\config on Windows.  <br>
-This config file can only be changed by git config -f  as an admin.</li></ul></li>
-<li><b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry you’re currently using. <br>
-Specific to that single repository.</li></ol>
+        <ol>
+            <li><b>/etc/gitconfig </b> values for every user on the system and all repositories. <br> If you pass the option <b>–system</b> it reads and writes from this file specifically.</li>
+            <li><b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> –global</b> option <br>
+                <ul>
+                    <li>system-level config file in C:\ProgramData\Git\config on Windows. <br> This config file can only be changed by git config -f as an admin.</li>
+                </ul>
+            </li>
+            <li><b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry you’re currently using. <br> Specific to that single repository.</li>
+        </ol>
 
-<p>Specify the following information which will be used in each commit message.  <br>
-You can override for individual projects by running the command from the project <br>
-repository without the global option.</p>
+        <p>Specify the following information which will be used in each commit message. <br> You can override for individual projects by running the command from the project <br> repository without the global option.</p>
 
-<p>git config –global user.name “John Doe” <br>
-git config –global user.email johndoe@example.com</p>
+        <p>git config –global user.name “John Doe” <br> git config –global user.email johndoe@example.com</p>
 
-<p>Can specify default text editor that will be used when Git needs you to type a message.</p>
+        <p>Can specify default text editor that will be used when Git needs you to type a message.</p>
 
-<p>git config –global core.editor “‘C:/Program Files/Notepad++/notepad++.exe’ -multiInst <br>
- -nosession”</p></li>
+        <p>git config –global core.editor “C:/Program Files/Notepad++/notepad++.exe -multiInst <br> -nosession”
+        </p>
+    </li>
 </ul>
 
 
@@ -104,7 +104,8 @@ git config –global user.email johndoe@example.com</p>
 
 <h4 id="getting-help">Getting Help</h4>
 
-<p><b> git help</b> to show man pages.</p>
+<pre><code>git help</pre></code>
+<p> to show man pages.</p>
 
 
 
@@ -114,12 +115,12 @@ git config –global user.email johndoe@example.com</p>
 
 <h4 id="initalize-a-repo-in-an-existing-directory">Initalize a Repo in an Existing Directory</h4>
 
-<pre><code>cd /C/user/your_repository
+<pre><code>
+cd /C/user/your_repository
 git init
 </code></pre>
 
-<p>This creates a new subdirectory named <b>.git</b> for all repo files.  <br>
-You should track files in directory using the following:</p>
+<p>This creates a new subdirectory named <b>.git</b> for all repo files. <br> You should track files in directory using the following:</p>
 
 <pre><code>git add *.c
 git add LICENCE
@@ -130,9 +131,7 @@ git commit -m 'initial project version'
 
 <h4 id="clone-an-existing-repository">Clone an Existing Repository</h4>
 
-<p>Copy an existing Git repository using <b>git clone [url]</b>. <br>
-Git receives a full copy of nearly all data that the server has.  <br>
-Every version of every file for the history of the project is pulled down by default.</p>
+<p>Copy an existing Git repository using <b>git clone [url]</b>. <br> Git receives a full copy of nearly all data that the server has. <br> Every version of every file for the history of the project is pulled down by default.</p>
 
 
 
@@ -163,31 +162,28 @@ Every version of every file for the history of the project is pulled down by def
 <p>Use <b>.gitignore</b> to allow files not to be tracked.</p>
 
 <ul>
-<li>Blank lines or lines starting with # are ignored.</li>
-<li>Standard glob patterns work.</li>
-<li>You can start patterns with a forward slash (/) to avoid recursivity.</li>
-<li>You can end patterns with a forward slash (/) to specify a directory.</li>
-<li>You can negate a pattern by starting it with an exclamation point (!).</li>
+    <li>Blank lines or lines starting with # are ignored.</li>
+    <li>Standard glob patterns work.</li>
+    <li>You can start patterns with a forward slash (/) to avoid recursivity.</li>
+    <li>You can end patterns with a forward slash (/) to specify a directory.</li>
+    <li>You can negate a pattern by starting it with an exclamation point (!).</li>
 </ul>
 
-<p><b> git diff </b> used to show exactly what changed, not just what file in files tat are unstagd.</p>
+<p><b> git diff </b> used to show exactly what changed, not just what file in files tat are unstaged.</p>
 
 
 
 <h4 id="skipping-the-staging-area">Skipping the Staging Area</h4>
 
-<p>use the <b>-a</b> option to the <b>git commit </b> to automatically stage every file that is already tracked  <br>
-before doing the commit, letting you skip the <b>git add</b> part. </p>
+<p>use the <b>-a</b> option to the <b>git commit </b> to automatically stage every file that is already tracked <br> before doing the commit, letting you skip the <b>git add</b> part. </p>
 
 
 
 <h4 id="removing-files">Removing Files</h4>
 
-<p><b>git rm</b> to remove tracked files (remove from staging area) then commit change. <br>
-Deleting a local file will place the it in unstaged.</p>
+<p><b>git rm</b> to remove tracked files (remove from staging area) then commit change. <br> Deleting a local file will place the it in unstaged.</p>
 
-<p>To stop tracking a file use <b>git rm –cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b> <br>
-Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b></p>
+<p>To stop tracking a file use <b>git rm –cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b> <br> Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b></p>
 
 
 
@@ -196,143 +192,146 @@ Use <b> git mv file_from file_to </b> to change the name of a file instead of st
 <p><b>git log</b> to get list of commits made in the repo.</p>
 
 <table>
-<thead>
-<tr>
-  <th>Option</th>
-  <th align="center">Function</th>
-</tr>
-</thead>
-<tbody><tr>
-  <td>-p</td>
-  <td align="center">diff btwn each commit</td>
-</tr>
-<tr>
-  <td>-{n}</td>
-  <td align="center">limit output to last ‘n’ entries</td>
-</tr>
-<tr>
-  <td>–stat</td>
-  <td align="center">abbreviated stats for each commit</td>
-</tr>
-<tr>
-  <td>–pretty={oneline, short, full, fuller}</td>
-  <td align="center">change log output to format</td>
-</tr>
-<tr>
-  <td>–pretty=format:”{}”</td>
-  <td align="center">specify our own log output format</td>
-</tr>
-<tr>
-  <td>–graph</td>
-  <td align="center">shows ASCII graph of branch and merge history</td>
-</tr>
-<tr>
-  <td>–since={ 2 days / 2.weeks / etc}</td>
-  <td align="center">list commits in last x time period</td>
-</tr>
-<tr>
-  <td>–since, –after</td>
-  <td align="center">Limit the commits to those made after the specified date.</td>
-</tr>
-<tr>
-  <td>–until, –before</td>
-  <td align="center">Limit the commits to those made before the specified date.</td>
-</tr>
-<tr>
-  <td>–author</td>
-  <td align="center">Only show commits in which the author entry matches the specified string.</td>
-</tr>
-<tr>
-  <td>–committer</td>
-  <td align="center">Only show commits in which the committer entry matches the specified string.</td>
-</tr>
-<tr>
-  <td>–grep</td>
-  <td align="center">Only show commits with a commit message containing the string</td>
-</tr>
-<tr>
-  <td>-S{text}</td>
-  <td align="center">Only show commits adding or removing code matching the string</td>
-</tr>
-</tbody></table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th align="center">Function</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>-p</td>
+            <td align="center">diff between each commit</td>
+        </tr>
+        <tr>
+            <td>-{n}</td>
+            <td align="center">limit output to last ‘n’ entries</td>
+        </tr>
+        <tr>
+            <td>–stat</td>
+            <td align="center">abbreviated stats for each commit</td>
+        </tr>
+        <tr>
+            <td>–pretty={oneline, short, full, fuller}</td>
+            <td align="center">change log output to format</td>
+        </tr>
+        <tr>
+            <td>–pretty=format:”{}”</td>
+            <td align="center">specify our own log output format</td>
+        </tr>
+        <tr>
+            <td>–graph</td>
+            <td align="center">shows ASCII graph of branch and merge history</td>
+        </tr>
+        <tr>
+            <td>–since={ 2 days / 2.weeks / etc}</td>
+            <td align="center">list commits in last x time period</td>
+        </tr>
+        <tr>
+            <td>–since, –after</td>
+            <td align="center">Limit the commits to those made after the specified date.</td>
+        </tr>
+        <tr>
+            <td>–until, –before</td>
+            <td align="center">Limit the commits to those made before the specified date.</td>
+        </tr>
+        <tr>
+            <td>–author</td>
+            <td align="center">Only show commits in which the author entry matches the specified string.</td>
+        </tr>
+        <tr>
+            <td>–committer</td>
+            <td align="center">Only show commits in which the committer entry matches the specified string.</td>
+        </tr>
+        <tr>
+            <td>–grep</td>
+            <td align="center">Only show commits with a commit message containing the string</td>
+        </tr>
+        <tr>
+            <td>-S{text}</td>
+            <td align="center">Only show commits adding or removing code matching the string</td>
+        </tr>
+    </tbody>
+</table>
 
 
 <h4 id="format-options">Format Options</h4>
 
 <table>
-<thead>
-<tr>
-  <th>Option</th>
-  <th align="center">Function</th>
-</tr>
-</thead>
-<tbody><tr>
-  <td>%H</td>
-  <td align="center">Commit hash</td>
-</tr>
-<tr>
-  <td>%h</td>
-  <td align="center">Abbreviated commit hash</td>
-</tr>
-<tr>
-  <td>%T</td>
-  <td align="center">Tree hash</td>
-</tr>
-<tr>
-  <td>%t</td>
-  <td align="center">Abbreviated tree hash</td>
-</tr>
-<tr>
-  <td>%P</td>
-  <td align="center">Parent hashes</td>
-</tr>
-<tr>
-  <td>%p</td>
-  <td align="center">Abbreviated parent hashes</td>
-</tr>
-<tr>
-  <td>%an</td>
-  <td align="center">Author name</td>
-</tr>
-<tr>
-  <td>%ae</td>
-  <td align="center">Author email</td>
-</tr>
-<tr>
-  <td>%ad</td>
-  <td align="center">Author date (format respects the –date=option)</td>
-</tr>
-<tr>
-  <td>%ar</td>
-  <td align="center">Author date, relative</td>
-</tr>
-<tr>
-  <td>%cn</td>
-  <td align="center">Committer name</td>
-</tr>
-<tr>
-  <td>%ce</td>
-  <td align="center">Committer email</td>
-</tr>
-<tr>
-  <td>%cd</td>
-  <td align="center">Committer date</td>
-</tr>
-<tr>
-  <td>%cr</td>
-  <td align="center">Committer date, relative</td>
-</tr>
-<tr>
-  <td>%s</td>
-  <td align="center">Subject</td>
-</tr>
-</tbody></table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th align="center">Function</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>%H</td>
+            <td align="center">Commit hash</td>
+        </tr>
+        <tr>
+            <td>%h</td>
+            <td align="center">Abbreviated commit hash</td>
+        </tr>
+        <tr>
+            <td>%T</td>
+            <td align="center">Tree hash</td>
+        </tr>
+        <tr>
+            <td>%t</td>
+            <td align="center">Abbreviated tree hash</td>
+        </tr>
+        <tr>
+            <td>%P</td>
+            <td align="center">Parent hashes</td>
+        </tr>
+        <tr>
+            <td>%p</td>
+            <td align="center">Abbreviated parent hashes</td>
+        </tr>
+        <tr>
+            <td>%an</td>
+            <td align="center">Author name</td>
+        </tr>
+        <tr>
+            <td>%ae</td>
+            <td align="center">Author email</td>
+        </tr>
+        <tr>
+            <td>%ad</td>
+            <td align="center">Author date (format respects the –date=option)</td>
+        </tr>
+        <tr>
+            <td>%ar</td>
+            <td align="center">Author date, relative</td>
+        </tr>
+        <tr>
+            <td>%cn</td>
+            <td align="center">Committer name</td>
+        </tr>
+        <tr>
+            <td>%ce</td>
+            <td align="center">Committer email</td>
+        </tr>
+        <tr>
+            <td>%cd</td>
+            <td align="center">Committer date</td>
+        </tr>
+        <tr>
+            <td>%cr</td>
+            <td align="center">Committer date, relative</td>
+        </tr>
+        <tr>
+            <td>%s</td>
+            <td align="center">Subject</td>
+        </tr>
+    </tbody>
+</table>
 
 
 <h4 id="undoing-things">Undoing Things</h4>
 
-<p><b> git commit –amend </b> try to commit again, used to change files or message of commit. <br>
-Unmodify a file using <b>git checkout – file </b>. Danger of losing changes. Suggest using git stash unless sure that you don’t need changes.</p>
+<p><b> git commit –amend </b> try to commit again, used to change files or message of commit. <br> Unmodify a file using <b>git checkout – file </b>. Danger of losing changes. Suggest using git stash unless sure that you don’t need changes.</p>
 
 
 
@@ -356,9 +355,7 @@ Unmodify a file using <b>git checkout – file </b>. Danger of losing changes. S
 
 <h4 id="tagging">Tagging</h4>
 
-<p>Tag specific point in history as being important. Mark release points <br>
-Annotated tags are recommended since they contain tagger name, email and date <br>
-You can add tas after a commit is made</p>
+<p>Tag specific point in history as being important. Mark release points <br> Annotated tags are recommended since they contain tagger name, email and date <br> You can add tas after a commit is made</p>
 
 <p><b>git tag</b> - lists available tags in alphabetical order</p>
 
@@ -368,7 +365,7 @@ You can add tas after a commit is made</p>
 
 <h5 id="sharing-tags">Sharing Tags</h5>
 
-<p><b>git push</b> doesn’t trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b></p>
+<p><b>git push</b> doesn’t trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tag-name]</b></p>
 
 
 
@@ -381,7 +378,7 @@ You can add tas after a commit is made</p>
 <h4 id="creating-a-branch">Creating a Branch</h4>
 
 <p><b>git branch [branch-name]</b> will create a new pointer to the same commit you’re currently on. <br>
-<b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.</p>
+    <b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.</p>
 
 
 
@@ -389,8 +386,7 @@ You can add tas after a commit is made</p>
 
 <p><b>git checkout [branch-name]</b> moves the HEAD to point to another branch.</p>
 
-<p>When merging 2 commits that can be reached by following the first commit’s history,  <br>
-Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a “fast forward”.</p>
+<p>When merging 2 commits that can be reached by following the first commit’s history, <br> Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a “fast forward”.</p>
 
 
 
@@ -402,21 +398,18 @@ Git simplifies things by moving the pointer forward because there is no divergen
 
 <h4 id="merge-commit">Merge Commit</h4>
 
-<p>When a branch has diverged from another and is merged back in, a special commit is made from a  <br>
-three way merge.</p>
+<p>When a branch has diverged from another and is merged back in, a special commit is made from a <br> three way merge.</p>
 
 
 
 <h4 id="merge-conflict">Merge Conflict</h4>
 
-<p>When there is a merge conflict, there is an indication of the differences that you must resolve.  <br>
-The following is what is held in the branch you are currently in. <br>
-&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<p>When there is a merge conflict, there is an indication of the differences that you must resolve. <br> The following is what is held in the branch you are currently in. <br> &lt;&lt;&lt;&lt;&lt; HEAD</p>
 
 <h1 id="content">…….content</h1>
 
 <p>The following is below <b>HEAD</b> and is from the branch that you attempted to merge <br>
-<code>.......content <br>
+    <code>.......content <br>
 </code></p>
 
 <p>run <b>git add (file)</b> to mark file as resolved.</p>

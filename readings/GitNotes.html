@@ -193,16 +193,19 @@ This config file can only be changed by git config -f <file> as an admin.
     `git tag -a {tag-name} -m "comment"` to create a tag
 
     ##### Sharing Tags
+    
     `git push`doesn't trasnfer tags to remote servers. You have to explicitly push tags using `git push origin [tag-name]`
 
     ## Git Branching
     Branching means getting to diverge from the main line of development and continue to do work without it.
 
     #### Creating a Branch
+    
     `git branch [branch-name]` will create a new pointer to the same commit you're currently on.
     `HEAD`is a pointer to local branch you are currently on. You stay on `HEAD` after creating a branch.
 
     #### Switching Branches
+    
     `git checkout [branch-name]` moves the HEAD to point to another branch.
 
     When merging 2 commits that can be reached by following the first commit's history,

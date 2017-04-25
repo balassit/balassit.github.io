@@ -10,11 +10,15 @@
     <!-- Custom CSS and JavaScript -->
 
     {% for css_file in page.custom_css %}
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/{{ css_file }}">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/{{ css_file }}">
     {% endfor %}
 
     {% for js_file in page.custom_js %}
-        <script src="{{ site.baseurl }}/{{ js_file }}"></script>
+    <script src="{{ site.baseurl }}/{{ js_file }}"></script>
+    {% endfor %}
+
+    {% for js_file in page.source_js %}
+    <script src="{{ js_file }}"></script>
     {% endfor %}
 
     <title>{{ page.title }} - Blake Lassiter</title>

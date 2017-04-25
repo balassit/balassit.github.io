@@ -190,3 +190,39 @@ You can add tas after a commit is made
 <b>git push</b> doesn't trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b>
 
 ##Git Branching
+Branching means getting to diverge from the main line of development and continue to do work without it.
+
+####Creating a Branch
+<b>git branch [branch-name]</b> will create a new pointer to the same commit you're currently on.
+<b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.
+
+####Switching Branches
+<b>git checkout [branch-name]</b> moves the HEAD to point to another branch.
+
+When merging 2 commits that can be reached by following the first commit's history, 
+Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
+
+####Delete a branch
+<b>git branch -d hotfix</b> deletes a branch from local machine.
+
+####Merge Commit
+When a branch has diverged from another and is merged back in, a special commit is made from a 
+three way merge.
+
+####Merge Conflict
+When there is a merge conflict, there is an indication of the differences that you must resolve. 
+The following is what is held in the branch you are currently in.
+````
+<<<<<HEAD
+.......content
+=====
+````
+
+The following is below <b>HEAD</b> and is from the branch that you attempted to merge
+````
+.......content
+>>>>>>
+````
+run <b>git add (file)</b> to mark file as resolved.
+
+Then <b>git commit</b> to finalize the merge

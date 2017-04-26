@@ -1,238 +1,417 @@
 ---
-layout: markdown
+layout: default
 title: "Readings"
 id: "readings"
 ---
-## Version Control
 
-##### Version Control:
-system that records changes to a file over time so that you can recall specific versions later.
+<h2 id="version-control">Version Control</h2>
 
-##### Distributed Version Control:
-fully mirror the repository rather than just the latest snapshot. Allows for hierarchical models not possible in centralized.
 
-## Getting Started
 
-#### SVN Structure
-- List of file based changes
+<h5 id="version-control-1">version control:</h5>
 
-#### Git Structure
-- Every time you commit, or save the state of your project in Git,
-it basically takes a picture of what all your files look like at
-that moment and stores a reference to that snapshot.
-If the file has not changed, Git doesn't store the file again,
-just a link to the previous identical file already stored.
+<p>system that records changes to a file over time so that you can recall specific versions later.</p>
 
 
-- Operations almost instant because on latency of network
-- Can commit work until getting a network connection to upload.
 
-- As in any VCS, you can lose or mess up changes you haven’t
-committed yet; but after you commit a snapshot into Git,
-it is very difficult to lose, especially if you regularly
-push your database to another repository.
+<h5 id="distributed-version-control">distributed version control:</h5>
 
-Git has three main states that your files can reside in: committed, modified, and staged.
-1. Committed means that the data is safely stored in your local database.
-2. Modified means that you have changed the file but have not committed it to your database yet
-3. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+<p>fully mirror the repository rather than just the latest snapshot. Allows for hierarchical models not possible in centralized.</p>
 
 
-#### Install and Setup of Git
 
-- Ubuntu: `sudo apt-get install git-all`
-- Windows: http://git-scm.com/download/win
+<h2 id="getting-started">Getting Started</h2>
 
-#### Configure System Environment
-- `git config` lets you configure variales that control all aspects of how Git looks and operates.
-- These variables can be stored in 3 locations:
-1. `/etc/gitconfig` values for every user on the system and all repositories.
-If you pass the option `--system` it reads and writes from this file specifically.
-2. `~/.gitconfig` or `~/.config/git/config` specific to your user. You can make Git read and write to this file by passing the `--global` option
-+ system-level config file in C:\ProgramData\Git\config on Windows.
-This config file can only be changed by git config -f <file> as an admin.
-    3.  `config` file in the git directory `(.ig/config)` of whatever repository you're currently using.
-    Specific to that single repository.
 
-    Specify the following information which will be used in each commit message.
-    You can override for individual projects by running the command from the project
-    repository without the global option.
 
-    `git config --global user.name "John Doe"`
+<h4 id="svn-structure">SVN Structure</h4>
 
-    `git config --global user.email johndoe@example.com`
-
-    Can specify default text editor that will be used when Git needs you to type a message.
-
-    `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"`
-
-    #### Check Your Settings
-
-    `git config --list`
-
-    #### Getting Help
-    `git help` to show man pages.
-
-    ## Git Basics
-
-    #### Initalize a Repo in an Existing Directory
-
-    `
-    cd /C/user/your_repository
-    git init
-    `
+<ul>
+    <li>List of file based changes</li>
+</ul>
 
-    This creates a new subdirectory named `.git`for all repo files.
-    You should track files in directory using the following:
 
-    ```
-    git add *.c
-    git add LICENCE
-    git commit -m 'initial project version'
-    ```
 
-    #### Clone an Existing Repository
-    Copy an existing Git repository using `git clone [url]`.
-    Git receives a full copy of nearly all data that the server has.
-    Every version of every file for the history of the project is pulled down by default.
+<h4 id="git-structure">Git Structure</h4>
 
-    #### Recording Changes to the Repository
+<ul>
+    <li>
+        <p>Every time you commit, or save the state of your project in Git, <br> it basically takes a picture of what all your files look like at <br> that moment and stores a reference to that snapshot. <br> If the file has not changed, Git doesn’t store
+            the file again, <br> just a link to the previous identical file already stored.</p>
+    </li>
+    <li>
+        <p>Operations almost instant because on latency of network <br> Can commit work until getting a netowrk connection to upload.</p>
+    </li>
+    <li>
+        <p>As in any VCS, you can lose or mess up changes you haven’t <br> committed yet; but after you commit a snapshot into Git, <br> it is very difficult to lose, especially if you regularly <br> push your database to another repository.</p>
+    </li>
+</ul>
 
-    ##### Tracked Files
-    files that were in the last snapshot; they can be in any state.
-    ##### Untracked Files
-    any files in working directory that were not in your last snapshot and are not in your staging area.
+<p>Git has three main states that your files can reside in: Committed, modified, and staged. <br> 1. Committed means that the data is safely stored in your local database. <br> 2. Modified means that you have changed the file but have not committed it to
+    your database yet <br> 3. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</p>
 
-    ##### Track New Files
-    Use `git add (files)`to track files or stage files
-
-    #### Ignoring Files
-    Use `.gitignore` to allow files not to be tracked.
-
-    - Blank lines or lines starting with # are ignored.
-    - Standard glob patterns work.
-    - You can start patterns with a forward slash (/) to avoid recursivity.
-    - You can end patterns with a forward slash (/) to specify a directory.
-    - You can negate a pattern by starting it with an exclamation point (!).
 
-    `git diff` used to show exactly what changed, not just what file in files tat are unstagd.
 
-    #### Skipping the Staging Area
-    use the `-a` option to the `git commit` to automatically stage every file that is already tracked
-    before doing the commit, letting you skip the `git add` part.
+<h4 id="install-and-setup-of-git">Install and Setup of Git</h4>
 
-    #### Removing Files
-    `git rm` to remove tracked files (remove from staging area) then commit change.
-    Deleting a local file will place the it in unstaged.
+<ul>
+    <li>
+        <p>Ubuntu</p>
+        <pre><code>sudo apt-get install git-all</pre></code>
+    </li>
+    <li>Windows <br>
+        <a href="http://git-scm.com/download/win">http://git-scm.com/download/win</a></li>
+</ul>
 
-    To stop tracking a file use `git rm --cached (file)`; This is useful for files that you forgot to add in `.gitignore`.
-    Use `git mv file_from file_to` to change the name of a file instead of standard `mv`
 
-    #### Viewing the Commit History
-    `git log` to get list of commits made in the repo.
 
-    | Option        | Function      |
-    | ------------- |:-------------:|
-    | -p            | diff btwn each commit|
-    | -{n}          | limit output to last 'n' entries|
-    | --stat        | abbreviated stats for each commit|
-    | --pretty={oneline, short, full, fuller}      | change log output to format|
-    | --pretty=format:"{}"      | specify our own log output format |
-    | --graph | shows ASCII graph of branch and merge history |
-    | --since={ 2 days / 2.weeks / etc} | list commits in last x time period |
-    |--since, --after | Limit the commits to those made after the specified date.|
-    |--until, --before | Limit the commits to those made before the specified date.|
-    |--author | Only show commits in which the author entry matches the specified string.|
-    |--committer | Only show commits in which the committer entry matches the specified string.|
-    |--grep | Only show commits with a commit message containing the string|
-    |-S{text}  |Only show commits adding or removing code matching the string|
+<h4 id="configure-system-environment">Configure System Environment</h4>
 
-    #### Format Options
-    | Option        | Function      |
-    | ------------- |:-------------:|
-    | %H | Commit hash |
-    | %h |Abbreviated commit hash|
-    | %T |Tree hash|
-    | %t |Abbreviated tree hash|
-    | %P |Parent hashes|
-    | %p |Abbreviated parent hashes|
-    |%an |Author name|
-    |%ae |Author email|
-    |%ad |Author date (format respects the --date=option)|
-    |%ar |Author date, relative|
-    |%cn |Committer name|
-    |%ce |Committer email|
-    |%cd |Committer date|
-    |%cr |Committer date, relative|
-    | %s |Subject|
+<ul>
+    <li><b>git config </b>lets you configure variales that control all aspects of how Git looks and operates. </li>
+    <li>
+        <p>These variables can be stored in 3 locations:</p>
 
-    #### Undoing Things
-    `git commit --amend` try to commit again, used to change files or message of commit.
-    Unmodify a file using `git checkout --file`. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
+        <ol>
+            <li><b>/etc/gitconfig </b> values for every user on the system and all repositories. <br> If you pass the option <b>–system</b> it reads and writes from this file specifically.</li>
+            <li><b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> –global</b> option <br>
+                <ul>
+                    <li>system-level config file in C:\ProgramData\Git\config on Windows. <br> This config file can only be changed by git config -f as an admin.</li>
+                </ul>
+            </li>
+            <li><b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry you’re currently using. <br> Specific to that single repository.</li>
+        </ol>
 
-    #### Adding Remote Repositories
-    `git remote ` - lists the remote servers configured
+        <p>Specify the following information which will be used in each commit message. <br> You can override for individual projects by running the command from the project <br> repository without the global option.</p>
 
-    `git remote add [shortname] [url]` - add new remote git repo as a shortname you can reference easily
+        <p>git config –global user.name “John Doe” <br> git config –global user.email johndoe@example.com</p>
 
-    #### Fetching Pulling and Pushing Your Remotes
-    `git fetch [remote-name]` - pull down data from remote project you don't have yet
+        <p>Can specify default text editor that will be used when Git needs you to type a message.</p>
 
-    `git pull` - once you are tracking a repo to fetch and merge
+        <p>git config –global core.editor “C:/Program Files/Notepad++/notepad++.exe -multiInst <br> -nosession”
+        </p>
+    </li>
+</ul>
 
-    `git push [remote-name] [branch name]`
 
-    #### Tagging
-     - Tag specific point in history as being important. Mark release points
-     - Annotated tags are recommended since they contain tagger name, email and date
-     - You can add tas after a commit is made
 
-    `git tag` to list available tags in alphabetical order
+<h4 id="check-your-settings">Check Your Settings</h4>
 
-    `git tag -a {tag-name} -m "comment"` to create a tag
+<pre><code>git config --list
+</code></pre>
 
-    ##### Sharing Tags
 
-    `git push`doesn't trasnfer tags to remote servers. You have to explicitly push tags using `git push origin [tag-name]`
 
-    ## Git Branching
-    Branching means getting to diverge from the main line of development and continue to do work without it.
+<h4 id="getting-help">Getting Help</h4>
 
-    #### Creating a Branch
+<pre><code>git help</pre></code>
+<p> to show man pages.</p>
 
-    `git branch [branch-name]` will create a new pointer to the same commit you're currently on.
-    `HEAD`is a pointer to local branch you are currently on. You stay on `HEAD` after creating a branch.
 
-    #### Switching Branches
 
-    `git checkout [branch-name]` moves the HEAD to point to another branch.
+<h2 id="git-basics">Git Basics</h2>
 
-    When merging 2 commits that can be reached by following the first commit's history,
-    Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
 
-    #### Delete a branch
 
-    `git branch -d hotfix` deletes a branch from local machine.
+<h4 id="initalize-a-repo-in-an-existing-directory">Initalize a Repo in an Existing Directory</h4>
 
-    #### Merge Commit
+<pre><code>
+cd /C/user/your_repository
+git init
+</code></pre>
 
-    When a branch has diverged from another and is merged back in, a special commit is made from a
-    three way merge.
+<p>This creates a new subdirectory named <b>.git</b> for all repo files. <br> You should track files in directory using the following:</p>
 
-    #### Merge Conflict
-    
-    When there is a merge conflict, there is an indication of the differences that you must resolve.
-    The following is what is held in the branch you are currently in.
+<pre><code>git add *.c
+git add LICENCE
+git commit -m 'initial project version'
+</code></pre>
 
-    > < < < < HEAD
 
-    > content
 
-    > =====
+<h4 id="clone-an-existing-repository">Clone an Existing Repository</h4>
 
-    Below is the content from the branch that you attempted to merge
+<p>Copy an existing Git repository using <b>git clone [url]</b>. <br> Git receives a full copy of nearly all data that the server has. <br> Every version of every file for the history of the project is pulled down by default.</p>
 
-    `git add (file)` to mark file as resolved.
 
-    `git commit` to finalize the merge.
 
+<h4 id="recording-changes-to-the-repository">Recording Changes to the Repository</h4>
+
+
+
+<h5 id="tracked-files">Tracked Files</h5>
+
+<p>files that were in the last snapshot; they can be in any state.</p>
+
+
+
+<h5 id="untracked-files">Untracked Files</h5>
+
+<p>any files in working directory that were not in your last snapshot and are not in your staging area. </p>
+
+
+
+<h5 id="track-new-files">Track New Files</h5>
+
+<p>Use <b> git add (files)</b> to track files or stage files</p>
+
+
+
+<h4 id="ignoring-files">Ignoring Files</h4>
+
+<p>Use <b>.gitignore</b> to allow files not to be tracked.</p>
+
+<ul>
+    <li>Blank lines or lines starting with # are ignored.</li>
+    <li>Standard glob patterns work.</li>
+    <li>You can start patterns with a forward slash (/) to avoid recursivity.</li>
+    <li>You can end patterns with a forward slash (/) to specify a directory.</li>
+    <li>You can negate a pattern by starting it with an exclamation point (!).</li>
+</ul>
+
+<p><b> git diff </b> used to show exactly what changed, not just what file in files tat are unstaged.</p>
+
+
+
+<h4 id="skipping-the-staging-area">Skipping the Staging Area</h4>
+
+<p>use the <b>-a</b> option to the <b>git commit </b> to automatically stage every file that is already tracked <br> before doing the commit, letting you skip the <b>git add</b> part. </p>
+
+
+
+<h4 id="removing-files">Removing Files</h4>
+
+<p><b>git rm</b> to remove tracked files (remove from staging area) then commit change. <br> Deleting a local file will place the it in unstaged.</p>
+
+<p>To stop tracking a file use <b>git rm –cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b> <br> Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b></p>
+
+
+
+<h4 id="viewing-the-commit-history">Viewing the Commit History</h4>
+
+<p><b>git log</b> to get list of commits made in the repo.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th align="center">Function</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>-p</td>
+            <td align="center">diff between each commit</td>
+        </tr>
+        <tr>
+            <td>-{n}</td>
+            <td align="center">limit output to last ‘n’ entries</td>
+        </tr>
+        <tr>
+            <td>–stat</td>
+            <td align="center">abbreviated stats for each commit</td>
+        </tr>
+        <tr>
+            <td>–pretty={oneline, short, full, fuller}</td>
+            <td align="center">change log output to format</td>
+        </tr>
+        <tr>
+            <td>–pretty=format:”{}”</td>
+            <td align="center">specify our own log output format</td>
+        </tr>
+        <tr>
+            <td>–graph</td>
+            <td align="center">shows ASCII graph of branch and merge history</td>
+        </tr>
+        <tr>
+            <td>–since={ 2 days / 2.weeks / etc}</td>
+            <td align="center">list commits in last x time period</td>
+        </tr>
+        <tr>
+            <td>–since, –after</td>
+            <td align="center">Limit the commits to those made after the specified date.</td>
+        </tr>
+        <tr>
+            <td>–until, –before</td>
+            <td align="center">Limit the commits to those made before the specified date.</td>
+        </tr>
+        <tr>
+            <td>–author</td>
+            <td align="center">Only show commits in which the author entry matches the specified string.</td>
+        </tr>
+        <tr>
+            <td>–committer</td>
+            <td align="center">Only show commits in which the committer entry matches the specified string.</td>
+        </tr>
+        <tr>
+            <td>–grep</td>
+            <td align="center">Only show commits with a commit message containing the string</td>
+        </tr>
+        <tr>
+            <td>-S{text}</td>
+            <td align="center">Only show commits adding or removing code matching the string</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h4 id="format-options">Format Options</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th align="center">Function</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>%H</td>
+            <td align="center">Commit hash</td>
+        </tr>
+        <tr>
+            <td>%h</td>
+            <td align="center">Abbreviated commit hash</td>
+        </tr>
+        <tr>
+            <td>%T</td>
+            <td align="center">Tree hash</td>
+        </tr>
+        <tr>
+            <td>%t</td>
+            <td align="center">Abbreviated tree hash</td>
+        </tr>
+        <tr>
+            <td>%P</td>
+            <td align="center">Parent hashes</td>
+        </tr>
+        <tr>
+            <td>%p</td>
+            <td align="center">Abbreviated parent hashes</td>
+        </tr>
+        <tr>
+            <td>%an</td>
+            <td align="center">Author name</td>
+        </tr>
+        <tr>
+            <td>%ae</td>
+            <td align="center">Author email</td>
+        </tr>
+        <tr>
+            <td>%ad</td>
+            <td align="center">Author date (format respects the –date=option)</td>
+        </tr>
+        <tr>
+            <td>%ar</td>
+            <td align="center">Author date, relative</td>
+        </tr>
+        <tr>
+            <td>%cn</td>
+            <td align="center">Committer name</td>
+        </tr>
+        <tr>
+            <td>%ce</td>
+            <td align="center">Committer email</td>
+        </tr>
+        <tr>
+            <td>%cd</td>
+            <td align="center">Committer date</td>
+        </tr>
+        <tr>
+            <td>%cr</td>
+            <td align="center">Committer date, relative</td>
+        </tr>
+        <tr>
+            <td>%s</td>
+            <td align="center">Subject</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h4 id="undoing-things">Undoing Things</h4>
+
+<p><b> git commit –amend </b> try to commit again, used to change files or message of commit. <br> Unmodify a file using <b>git checkout – file </b>. Danger of losing changes. Suggest using git stash unless sure that you don’t need changes.</p>
+
+
+
+<h4 id="adding-remote-repositories">Adding Remote Repositories</h4>
+
+<p><b>git remote </b>- lists the remote servers configured</p>
+
+<p><b> git remote add   </b> - add new remote git repo as a shortname you can reference easily</p>
+
+
+
+<h4 id="fetching-pulling-and-pushing-your-remotes">Fetching Pulling and Pushing Your Remotes</h4>
+
+<p><b>git fetch [remote-name]</b> - pull down data from remote project you don’t have yet</p>
+
+<p><b>git pull</b> - once you are tracking a repo to fetch and merge</p>
+
+<p><b>git push [remote-name] [branch name]</b></p>
+
+
+
+<h4 id="tagging">Tagging</h4>
+
+<p>Tag specific point in history as being important. Mark release points <br> Annotated tags are recommended since they contain tagger name, email and date <br> You can add tas after a commit is made</p>
+
+<p><b>git tag</b> - lists available tags in alphabetical order</p>
+
+<p><b>git tag -a {tag-name} -m “comment”</b> - create a tag</p>
+
+
+
+<h5 id="sharing-tags">Sharing Tags</h5>
+
+<p><b>git push</b> doesn’t trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tag-name]</b></p>
+
+
+
+<h2 id="git-branching">Git Branching</h2>
+
+<p>Branching means getting to diverge from the main line of development and continue to do work without it.</p>
+
+
+
+<h4 id="creating-a-branch">Creating a Branch</h4>
+
+<p><b>git branch [branch-name]</b> will create a new pointer to the same commit you’re currently on. <br>
+    <b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.</p>
+
+
+
+<h4 id="switching-branches">Switching Branches</h4>
+
+<p><b>git checkout [branch-name]</b> moves the HEAD to point to another branch.</p>
+
+<p>When merging 2 commits that can be reached by following the first commit’s history, <br> Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a “fast forward”.</p>
+
+
+
+<h4 id="delete-a-branch">Delete a branch</h4>
+
+<p><b>git branch -d hotfix</b> deletes a branch from local machine.</p>
+
+
+
+<h4 id="merge-commit">Merge Commit</h4>
+
+<p>When a branch has diverged from another and is merged back in, a special commit is made from a <br> three way merge.</p>
+
+
+
+<h4 id="merge-conflict">Merge Conflict</h4>
+
+<p>When there is a merge conflict, there is an indication of the differences that you must resolve. <br> The following is what is held in the branch you are currently in. <br> &lt;&lt;&lt;&lt;&lt; HEAD</p>
+
+<h1 id="content">…….content</h1>
+
+<p>The following is below <b>HEAD</b> and is from the branch that you attempted to merge <br>
+    <code>.......content <br>
+</code></p>
+
+<p>run <b>git add (file)</b> to mark file as resolved.</p>
+
+<p>Then <b>git commit</b> to finalize the merge</p>

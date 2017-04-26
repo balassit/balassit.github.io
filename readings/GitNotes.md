@@ -1,17 +1,17 @@
-##Version Control 
+## Version Control 
 
-#####version control:
+##### version control:
   system that records changes to a file over time so that you can recall specific versions later.
 
-#####distributed version control: 
+##### distributed version control: 
   fully mirror the repository rather than just the latest snapshot. Allows for hierarchical models not possible in centralized.
  
-##Getting Started
+## Getting Started
 
-####SVN Structure
+#### SVN Structure
  - List of file based changes
  
-####Git Structure
+#### Git Structure
 - Every time you commit, or save the state of your project in Git,
  it basically takes a picture of what all your files look like at
   that moment and stores a reference to that snapshot.
@@ -33,7 +33,7 @@ Git has three main states that your files can reside in: Committed, modified, an
  3. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
 
  
-####Install and Setup of Git
+#### Install and Setup of Git
 
  - Ubuntu
   
@@ -41,7 +41,7 @@ Git has three main states that your files can reside in: Committed, modified, an
  - Windows
        http://git-scm.com/download/win
        
-####Configure System Environment
+#### Configure System Environment
  - <b>git config </B>lets you configure variales that control all aspects of how Git looks and operates. 
  - These variables can be stored in 3 locations:
    1. <b>/etc/gitconfig </b> values for every user on the system and all repositories.
@@ -64,16 +64,16 @@ Git has three main states that your files can reside in: Committed, modified, an
     git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst
      -nosession"
      
-####Check Your Settings
+#### Check Your Settings
      
     git config --list
      
-####Getting Help
+#### Getting Help
 <b> git help</b> to show man pages.
   
-##Git Basics
+## Git Basics
 
-####Initalize a Repo in an Existing Directory
+#### Initalize a Repo in an Existing Directory
 
     cd /C/user/your_repository
     git init
@@ -84,22 +84,22 @@ You should track files in directory using the following:
     git add LICENCE
     git commit -m 'initial project version'
     
-####Clone an Existing Repository
+#### Clone an Existing Repository
 Copy an existing Git repository using <b>git clone [url]</b>.
 Git receives a full copy of nearly all data that the server has. 
 Every version of every file for the history of the project is pulled down by default.
   
-####Recording Changes to the Repository
+#### Recording Changes to the Repository
 
-#####Tracked Files
+##### Tracked Files
 files that were in the last snapshot; they can be in any state.
-#####Untracked Files
+##### Untracked Files
 any files in working directory that were not in your last snapshot and are not in your staging area. 
 
-#####Track New Files
+##### Track New Files
 Use <b> git add (files)</b> to track files or stage files
 
-####Ignoring Files
+#### Ignoring Files
 Use <b>.gitignore</b> to allow files not to be tracked.
 
  - Blank lines or lines starting with # are ignored.
@@ -110,18 +110,18 @@ Use <b>.gitignore</b> to allow files not to be tracked.
 
 <b> git diff </b> used to show exactly what changed, not just what file in files tat are unstagd.
 
-####Skipping the Staging Area
+#### Skipping the Staging Area
 use the <b>-a</b> option to the <b>git commit </b> to automatically stage every file that is already tracked 
 before doing the commit, letting you skip the <b>git add</b> part. 
 
-####Removing Files
+#### Removing Files
 <b>git rm</b> to remove tracked files (remove from staging area) then commit change.
 Deleting a local file will place the it in unstaged.
 
 To stop tracking a file use <b>git rm --cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b>
 Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b>
 
-####Viewing the Commit History
+#### Viewing the Commit History
 <b>git log</b> to get list of commits made in the repo.
 
 | Option        | Function      |
@@ -142,7 +142,7 @@ specified string.|
 |--grep | Only show commits with a commit message containing the string|
 |-S{text}  |Only show commits adding or removing code matching the string|
 
-####Format Options
+#### Format Options
 | Option        | Function      |
 | ------------- |:-------------:|
 | %H | Commit hash |
@@ -161,23 +161,23 @@ specified string.|
 |%cr |Committer date, relative|
 |%s |Subject|
 
-####Undoing Things
+#### Undoing Things
 <b> git commit --amend </b> try to commit again, used to change files or message of commit.
 Unmodify a file using <b>git checkout -- file </b>. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
 
-####Adding Remote Repositories
+#### Adding Remote Repositories
 <b>git remote </b>- lists the remote servers configured
 
 <b> git remote add <shortname> <url> </b> - add new remote git repo as a shortname you can reference easily
 
-####Fetching Pulling and Pushing Your Remotes
+#### Fetching Pulling and Pushing Your Remotes
 <b>git fetch [remote-name]</b> - pull down data from remote project you don't have yet
 
 <b>git pull</b> - once you are tracking a repo to fetch and merge
 
 <b>git push [remote-name] [branch name]</b>
 
-####Tagging
+#### Tagging
 Tag specific point in history as being important. Mark release points
 Annotated tags are recommended since they contain tagger name, email and date
 You can add tas after a commit is made
@@ -186,30 +186,30 @@ You can add tas after a commit is made
 
 <b>git tag -a {tag-name} -m "comment"</b> - create a tag
 
-#####Sharing Tags
+##### Sharing Tags
 <b>git push</b> doesn't trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b>
 
-##Git Branching
+## Git Branching
 Branching means getting to diverge from the main line of development and continue to do work without it.
 
 ####Creating a Branch
 <b>git branch [branch-name]</b> will create a new pointer to the same commit you're currently on.
 <b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.
 
-####Switching Branches
+#### Switching Branches
 <b>git checkout [branch-name]</b> moves the HEAD to point to another branch.
 
 When merging 2 commits that can be reached by following the first commit's history, 
 Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
 
-####Delete a branch
+#### Delete a branch
 <b>git branch -d hotfix</b> deletes a branch from local machine.
 
-####Merge Commit
+#### Merge Commit
 When a branch has diverged from another and is merged back in, a special commit is made from a 
 three way merge.
 
-####Merge Conflict
+#### Merge Conflict
 When there is a merge conflict, there is an indication of the differences that you must resolve. 
 The following is what is held in the branch you are currently in.
 ````

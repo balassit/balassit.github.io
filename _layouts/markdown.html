@@ -3,12 +3,25 @@
     {% include head.html %}
 
     <body>
+        <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 1080px;
+            padding: 45px;
+        }
+        </style>
         {% include header.html %}
 
         {% include sidebar.html %}
-        <markdown>
-            {{ content }}
-        </markdown>
+
+        <main>
+            <article class="markdown-body">
+                <markdown>
+                    {{ content }}
+                </markdown>
+            </article>
+        </main>
         {% include footer.html %}
         <script src="https://spikespaz.github.io/tagdownjs/scripts/tagdown.min.js"></script>
     </body>

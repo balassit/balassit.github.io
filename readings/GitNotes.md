@@ -42,14 +42,14 @@ Git has three main states that your files can reside in: Committed, modified, an
        http://git-scm.com/download/win
        
 #### Configure System Environment
- - <b>git config </B>lets you configure variales that control all aspects of how Git looks and operates. 
+ - **git config **lets you configure variales that control all aspects of how Git looks and operates. 
  - These variables can be stored in 3 locations:
-   1. <b>/etc/gitconfig </b> values for every user on the system and all repositories.
-   If you pass the option <b>--system</b> it reads and writes from this file specifically.
-   2. <b>~/.gitconfig </b> or <b> ~/.config/git/config</b> specific to your user. You can make Git read and write to this file by passing the <b> --global</b> option
+   1. **/etc/gitconfig ** values for every user on the system and all repositories.
+   If you pass the option **--system** it reads and writes from this file specifically.
+   2. **~/.gitconfig ** or ** ~/.config/git/config** specific to your user. You can make Git read and write to this file by passing the ** --global** option
       + system-level config file in C:\ProgramData\Git\config on Windows. 
       This config file can only be changed by git config -f <file> as an admin.
-   3.  <b> config </b> file in the git directory <b> (.ig/config) </b> of whatever repositry you're currently using.
+   3.  ** config ** file in the git directory ** (.ig/config) ** of whatever repositry you're currently using.
    Specific to that single repository.
   
  Specify the following information which will be used in each commit message. 
@@ -69,7 +69,7 @@ Git has three main states that your files can reside in: Committed, modified, an
     git config --list
      
 #### Getting Help
-<b> git help</b> to show man pages.
+** git help** to show man pages.
   
 ## Git Basics
 
@@ -77,7 +77,7 @@ Git has three main states that your files can reside in: Committed, modified, an
 
     cd /C/user/your_repository
     git init
-This creates a new subdirectory named <b>.git</b> for all repo files. 
+This creates a new subdirectory named **.git** for all repo files. 
 You should track files in directory using the following:
     
     git add *.c
@@ -85,7 +85,7 @@ You should track files in directory using the following:
     git commit -m 'initial project version'
     
 #### Clone an Existing Repository
-Copy an existing Git repository using <b>git clone [url]</b>.
+Copy an existing Git repository using **git clone [url]**.
 Git receives a full copy of nearly all data that the server has. 
 Every version of every file for the history of the project is pulled down by default.
   
@@ -97,10 +97,10 @@ files that were in the last snapshot; they can be in any state.
 any files in working directory that were not in your last snapshot and are not in your staging area. 
 
 ##### Track New Files
-Use <b> git add (files)</b> to track files or stage files
+Use ** git add (files)** to track files or stage files
 
 #### Ignoring Files
-Use <b>.gitignore</b> to allow files not to be tracked.
+Use **.gitignore** to allow files not to be tracked.
 
  - Blank lines or lines starting with # are ignored.
  - Standard glob patterns work.
@@ -108,21 +108,21 @@ Use <b>.gitignore</b> to allow files not to be tracked.
  - You can end patterns with a forward slash (/) to specify a directory.
  - You can negate a pattern by starting it with an exclamation point (!).
 
-<b> git diff </b> used to show exactly what changed, not just what file in files tat are unstagd.
+** git diff ** used to show exactly what changed, not just what file in files tat are unstagd.
 
 #### Skipping the Staging Area
-use the <b>-a</b> option to the <b>git commit </b> to automatically stage every file that is already tracked 
-before doing the commit, letting you skip the <b>git add</b> part. 
+use the **-a** option to the **git commit ** to automatically stage every file that is already tracked 
+before doing the commit, letting you skip the **git add** part. 
 
 #### Removing Files
-<b>git rm</b> to remove tracked files (remove from staging area) then commit change.
+**git rm** to remove tracked files (remove from staging area) then commit change.
 Deleting a local file will place the it in unstaged.
 
-To stop tracking a file use <b>git rm --cached (file)</b>. This is useful for files that you forgot to add in <b>.gitignore</b>
-Use <b> git mv file_from file_to </b> to change the name of a file instead of standard <b>mv</b>
+To stop tracking a file use **git rm --cached (file)**. This is useful for files that you forgot to add in **.gitignore**
+Use ** git mv file_from file_to ** to change the name of a file instead of standard **mv**
 
 #### Viewing the Commit History
-<b>git log</b> to get list of commits made in the repo.
+**git log** to get list of commits made in the repo.
 
 | Option        | Function      |
 | ------------- |:-------------:|
@@ -135,10 +135,8 @@ Use <b> git mv file_from file_to </b> to change the name of a file instead of st
 | --since={ 2 days / 2.weeks / etc} | list commits in last x time period |
 |--since, --after | Limit the commits to those made after the specified date.|
 |--until, --before | Limit the commits to those made before the specified date.|
-|--author | Only show commits in which the author entry matches the
-specified string.|
-|--committer | Only show commits in which the committer entry matches the
-specified string.|
+|--author | Only show commits in which the author entry matches the specified string.|
+|--committer | Only show commits in which the committer entry matches the specified string.|
 |--grep | Only show commits with a commit message containing the string|
 |-S{text}  |Only show commits adding or removing code matching the string|
 
@@ -162,67 +160,66 @@ specified string.|
 |%s |Subject|
 
 #### Undoing Things
-<b> git commit --amend </b> try to commit again, used to change files or message of commit.
-Unmodify a file using <b>git checkout -- file </b>. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
+** git commit --amend ** try to commit again, used to change files or message of commit.
+Unmodify a file using **git checkout -- file **. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
 
 #### Adding Remote Repositories
-<b>git remote </b>- lists the remote servers configured
+**git remote **- lists the remote servers configured
 
-<b> git remote add <shortname> <url> </b> - add new remote git repo as a shortname you can reference easily
+** git remote add <shortname> <url> ** - add new remote git repo as a shortname you can reference easily
 
 #### Fetching Pulling and Pushing Your Remotes
-<b>git fetch [remote-name]</b> - pull down data from remote project you don't have yet
+**git fetch [remote-name]** - pull down data from remote project you don't have yet
 
-<b>git pull</b> - once you are tracking a repo to fetch and merge
+**git pull** - once you are tracking a repo to fetch and merge
 
-<b>git push [remote-name] [branch name]</b>
+**git push [remote-name] [branch name]**
 
 #### Tagging
 Tag specific point in history as being important. Mark release points
 Annotated tags are recommended since they contain tagger name, email and date
 You can add tas after a commit is made
 
-<b>git tag</b> - lists available tags in alphabetical order
+**git tag** - lists available tags in alphabetical order
 
-<b>git tag -a {tag-name} -m "comment"</b> - create a tag
+**git tag -a {tag-name} -m "comment"** - create a tag
 
 ##### Sharing Tags
-<b>git push</b> doesn't trasnfer tags to remote servers. You have to explicitly push tags using <b>git push origin [tagname]</b>
+**git push** doesn't trasnfer tags to remote servers. You have to explicitly push tags using **git push origin [tagname]**
 
 ## Git Branching
 Branching means getting to diverge from the main line of development and continue to do work without it.
 
-####Creating a Branch
-<b>git branch [branch-name]</b> will create a new pointer to the same commit you're currently on.
-<b>HEAD</b> is a pointer to local branch you are currently on. You stay on <b>HEAD</b> after creating a branch.
+#### Creating a Branch
+**git branch [branch-name]** will create a new pointer to the same commit you're currently on.
+**HEAD** is a pointer to local branch you are currently on. You stay on **HEAD** after creating a branch.
 
 #### Switching Branches
-<b>git checkout [branch-name]</b> moves the HEAD to point to another branch.
+**git checkout [branch-name]** moves the HEAD to point to another branch.
 
 When merging 2 commits that can be reached by following the first commit's history, 
 Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
 
 #### Delete a branch
-<b>git branch -d hotfix</b> deletes a branch from local machine.
+**git branch -d hotfix** deletes a branch from local machine.
 
 #### Merge Commit
 When a branch has diverged from another and is merged back in, a special commit is made from a 
 three way merge.
 
 #### Merge Conflict
-When there is a merge conflict, there is an indication of the differences that you must resolve. 
+When there is a merge conflict, there is an indication of the differences that you must resolve.
 The following is what is held in the branch you are currently in.
-````
-<<<<<HEAD
+```
+<<<<< HEAD
 .......content
 =====
-````
-
-The following is below <b>HEAD</b> and is from the branch that you attempted to merge
-````
+```
+The following is below **HEAD** and is from the branch that you attempted to merge.
+```
 .......content
 >>>>>>
-````
-run <b>git add (file)</b> to mark file as resolved.
+```
+run **git add (file)** to mark file as resolved.
 
-Then <b>git commit</b> to finalize the merge
+Then **git commit** to finalize the merge.

@@ -48,47 +48,52 @@ sudo apt-get install git-all
 http://git-scm.com/download/win
 
 #### Configure System Environment
-- **git config **lets you configure variales that control all aspects of how Git looks and operates.
+- **git config**lets you configure variales that control all aspects of how Git looks and operates.
 - These variables can be stored in 3 locations:
-1. **/etc/gitconfig ** values for every user on the system and all repositories.
-If you pass the option **--system** it reads and writes from this file specifically.
-2. **~/.gitconfig ** or ** ~/.config/git/config** specific to your user. You can make Git read and write to this file by passing the ** --global** option
+1. **/etc/gitconfig**values for every user on the system and all repositories.
+If you pass the option**--system** it reads and writes from this file specifically.
+2. **~/.gitconfig**or** ~/.config/git/config** specific to your user. You can make Git read and write to this file by passing the ** --global** option
 + system-level config file in C:\ProgramData\Git\config on Windows.
 This config file can only be changed by git config -f <file> as an admin.
-    3.  ** config ** file in the git directory ** (.ig/config) ** of whatever repositry you're currently using.
+    3.  **config** file in the git directory **(.ig/config)** of whatever repository you're currently using.
     Specific to that single repository.
 
     Specify the following information which will be used in each commit message.
     You can override for individual projects by running the command from the project
     repository without the global option.
 
+    ```
     git config --global user.name "John Doe"
     git config --global user.email johndoe@example.com
+    ```
 
     Can specify default text editor that will be used when Git needs you to type a message.
 
-    git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst
-    -nosession"
+    `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"`
 
     #### Check Your Settings
 
-    git config --list
+    `git config --list`
 
     #### Getting Help
-    ** git help** to show man pages.
+    `git help` to show man pages.
 
     ## Git Basics
 
-    #### Initalize a Repo in an Existing Directory
+    #### Initialize a Repo in an Existing Directory
 
+    ```
     cd /C/user/your_repository
     git init
+    ```
     This creates a new subdirectory named **.git** for all repo files.
     You should track files in directory using the following:
 
+    ```
     git add *.c
     git add LICENCE
     git commit -m 'initial project version'
+    ```
 
     #### Clone an Existing Repository
     Copy an existing Git repository using **git clone [url]**.
@@ -103,7 +108,7 @@ This config file can only be changed by git config -f <file> as an admin.
     any files in working directory that were not in your last snapshot and are not in your staging area.
 
     ##### Track New Files
-    Use ** git add (files)** to track files or stage files
+    Use **git add (files)** to track files or stage files
 
     #### Ignoring Files
     Use **.gitignore** to allow files not to be tracked.
@@ -114,21 +119,23 @@ This config file can only be changed by git config -f <file> as an admin.
     - You can end patterns with a forward slash (/) to specify a directory.
     - You can negate a pattern by starting it with an exclamation point (!).
 
-    ** git diff ** used to show exactly what changed, not just what file in files tat are unstagd.
+    **git diff** used to show exactly what changed, not just what file in files tat are unstagd.
 
     #### Skipping the Staging Area
-    use the **-a** option to the **git commit ** to automatically stage every file that is already tracked
+    use the **-a** option to the **git commit** to automatically stage every file that is already tracked
     before doing the commit, letting you skip the **git add** part.
 
     #### Removing Files
-    **git rm** to remove tracked files (remove from staging area) then commit change.
+    `git rm` to remove tracked files (remove from staging area) then commit change.
     Deleting a local file will place the it in unstaged.
 
-    To stop tracking a file use **git rm --cached (file)**. This is useful for files that you forgot to add in **.gitignore**
-    Use ** git mv file_from file_to ** to change the name of a file instead of standard **mv**
+    To stop tracking a file use `git rm --cached (file)`. This is useful for files that you forgot to add in `.gitignore`
+
+    Use `git mv file_from file_to` to change the name of a file instead of standard `mv`
 
     #### Viewing the Commit History
-    **git log** to get list of commits made in the repo.
+
+    `git log` to get list of commits made in the repo.
 
     | Option        | Function      |
     | ------------- |:-------------:|
@@ -166,48 +173,55 @@ This config file can only be changed by git config -f <file> as an admin.
     |%s |Subject|
 
     #### Undoing Things
-    ** git commit --amend ** try to commit again, used to change files or message of commit.
-    Unmodify a file using **git checkout -- file **. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
+    `git commit --amend` try to commit again, used to change files or message of commit.
+    Unmodify a file using `git checkout -- file`. Danger of losing changes. Suggest using git stash unless sure that you don't need changes.
 
     #### Adding Remote Repositories
-    **git remote **- lists the remote servers configured
+    `git remote`: lists the remote servers configured
 
-    ** git remote add [shortname] [url] ** - add new remote git repo as a shortname you can reference easily
+    `git remote add [shortname] [url]`: add new remote git repo as a shortname you can reference easily
 
     #### Fetching Pulling and Pushing Your Remotes
-    **git fetch [remote-name]** - pull down data from remote project you don't have yet
 
-    **git pull** - once you are tracking a repo to fetch and merge
+    `git fetch [remote-name]`: pull down data from remote project you don't have yet
 
-    **git push [remote-name] [branch name]**
+    `git pull`: once you are tracking a repo to fetch and merge
+
+    `git push [remote-name] [branch name]`
 
     #### Tagging
+
     Tag specific point in history as being important. Mark release points
     Annotated tags are recommended since they contain tagger name, email and date
     You can add tas after a commit is made
 
-    **git tag** - lists available tags in alphabetical order
+    `git tag`: lists available tags in alphabetical order
 
-    **git tag -a {tag-name} -m "comment"** - create a tag
+    `git tag -a {tag-name} -m "comment"`: create a tag
 
     ##### Sharing Tags
-    **git push** doesn't trasnfer tags to remote servers. You have to explicitly push tags using **git push origin [tagname]**
+
+    `git push` doesn't transfer tags to remote servers. You have to explicitly push tags using **git push origin [tag-name]**
 
     ## Git Branching
+
     Branching means getting to diverge from the main line of development and continue to do work without it.
 
     #### Creating a Branch
-    **git branch [branch-name]** will create a new pointer to the same commit you're currently on.
+
+    `git branch [branch-name]` will create a new pointer to the same commit you're currently on.
     **HEAD** is a pointer to local branch you are currently on. You stay on **HEAD** after creating a branch.
 
     #### Switching Branches
-    **git checkout [branch-name]** moves the HEAD to point to another branch.
+
+    `git checkout [branch-name]` moves the HEAD to point to another branch.
 
     When merging 2 commits that can be reached by following the first commit's history,
     Git simplifies things by moving the pointer forward because there is no divergent work to merge together - this is called a "fast forward".
 
     #### Delete a branch
-    **git branch -d hotfix** deletes a branch from local machine.
+
+    `git branch -d hotfix` deletes a branch from local machine.
 
     #### Merge Commit
     When a branch has diverged from another and is merged back in, a special commit is made from a
@@ -226,6 +240,6 @@ This config file can only be changed by git config -f <file> as an admin.
     .......content
     >>>>>>
     ```
-    run **git add (file)** to mark file as resolved.
+    run `git add (file)` to mark file as resolved.
 
-    Then **git commit** to finalize the merge.
+    Then `git commit` to finalize the merge.

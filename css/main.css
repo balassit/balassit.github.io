@@ -62,6 +62,9 @@ ul.posts li {
 @media screen and (max-width:375px) {
     header{
     }
+    footer {
+        padding-bottom: 30px;
+    }
     @-ms-viewport{
         width: device-width;
         initial-scale: 1;

@@ -51,6 +51,13 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.back-to-top i {
+
+  font-size: 60px;
+
+}
+
 /* Small screens */
 @media screen and (max-width:375px) {
     header{

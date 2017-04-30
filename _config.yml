@@ -17,18 +17,12 @@ page_data:
     id: "blog"
     url: "blog"
 
-  - title: "Resume"
-    id: "pdf/web/viewer.html?file=Resume.pdf"
-    url: "pdf/web/viewer.html?file=Resume.pdf"
+  - title: "Readings"
+    id: "readings"
+    url: "readings"
+
 
   - title: "Training"
     id: "training"
     url: "training"
 
-  - title: "Pace Chart"
-    id: "pace-chart"
-    url: "training/pace-chart"
-
-  - title: "Readings"
-    id: "readings"
-    url: "readings"

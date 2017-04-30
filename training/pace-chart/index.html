@@ -10,13 +10,16 @@ custom_js:
 
 <h1>Pace Chart</h1>
 
-<p> Enter your 5k time in the field below, then press Submit. You may enter time in the format MM:SS or H:MM:SS.</p>
+<p>Enter your 5k time in the field below, then press Submit. You may enter time in the format MM:SS or H:MM:SS.</p>
 
-5k Time: <input id="time-input" type="text">
 
-<button onclick="showPaces()">Submit</button> 
+<pace-input>
+    <label for="time-input">5k Time: </label>
+    <label class="unit"><input id="time-input" type="text"></label>
+    <button onclick="showPaces()">Submit</button>
 
-<label class="unit"><input type='checkbox' id="unit-check" value="metric">Metric</label>
+    <label class="unit"><input type='checkbox' id="unit-check" value="metric">Metric</label>
+</pace-input>
 
 <div id="paces-output"></div>
 

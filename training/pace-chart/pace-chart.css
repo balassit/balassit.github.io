@@ -7,10 +7,20 @@ main td, th {
     text-align: center;
     color: #333333;
     padding: 15px 10px;
-    border-right: 1px solid #cccccc; 
+    border-right: 1px solid #cccccc;
+    width: 75px;
+    width: 75px;
 }
 
 main #paces-output {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+pace-input label.unit {
+    margin-left: 3px;
+}
+
+pace-input label {
+    margin-right: 3px;
 }

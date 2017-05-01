@@ -27,6 +27,9 @@ page_data:
     id: "readings"
     url: "readings"
 
+  - title: "Resume"
+    id: "resume"
+    url: "resume"
 
   - title: "Training"
     id: "training"

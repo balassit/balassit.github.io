@@ -57,6 +57,10 @@ ul.posts li {
 
 }
 
+main li {
+    line-height: 1.4;
+}
+
 /* Small screens */
 @media screen and (max-width:375px) {
     header{

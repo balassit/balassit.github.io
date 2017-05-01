@@ -1,0 +1,10 @@
+---
+layout: page
+title: Blog
+---
+	<ul class="posts">
+
+	  {% for page in site.posts %}
+	    <li><span>{{ page.date | date_to_string }}</span> <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
+	  {% endfor %}
+	</ul>

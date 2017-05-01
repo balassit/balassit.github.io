@@ -1,6 +1,12 @@
-title: Blake Lassiter Website
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+
+title: Blake Lassiter
 name: Blake Lassiter
-baseurl: ""
+baseurl: ''
 markdown: kramdown
 
 page_data:
@@ -25,4 +31,3 @@ page_data:
   - title: "Training"
     id: "training"
     url: "training"
-

@@ -20,9 +20,11 @@ This is a helpful way to learn what the optimal paces are for working out at a g
 
  - [2015 XC]({{ site.baseurl }}/pdf/web/viewer.html?file=2015 XC.pdf)
  - [1500 Spring]({{ site.baseurl }}/pdf/web/viewer.html?file=2015 1500.pdf)
+ 
 ### 2014 
 
  - [2014 XC]({{ site.baseurl }}/pdf/web/viewer.html?file=2014 XC.pdf)
+ 
 ### Strength Exercises 
 
  - [Ab Routine]({{ site.baseurl }}/pdf/web/viewer.html?file=Ab Routine.pdf)

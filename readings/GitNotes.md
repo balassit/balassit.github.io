@@ -1,7 +1,6 @@
 ---
-layout: markdown
+layout: gitnotes-markdown
 title: "Readings"
-permalink: readings/GitNotes.html
 custom_css: css/github-markdown.css
 ---
 ## Version Control
@@ -139,38 +138,39 @@ Use `git mv file_from file_to` to change the name of a file instead of standard 
 
 | Option        | Function      |
 | ------------- |:-------------:|
-| -p      | diff btwn each commit|
-| -{n}      | limit output to last 'n' entries|
-| --stat      | abbreviated stats for each commit|
-| --pretty={oneline, short, full, fuller}      | change log output to format|
+| -p            | diff btwn each commit |
+| -{n}          | limit output to last 'n' entries |
+| --stat        | abbreviated stats for each commit |
+| --pretty={oneline, short, full, fuller}      | change log output to format |
 | --pretty=format:"{}"      | specify our own log output format |
-| --graph | shows ASCII graph of branch and merge history |
+| --graph       | shows ASCII graph of branch and merge history |
 | --since={ 2 days / 2.weeks / etc} | list commits in last x time period |
-|--since, --after | Limit the commits to those made after the specified date.|
-|--until, --before | Limit the commits to those made before the specified date.|
-|--author | Only show commits in which the author entry matches the specified string.|
-|--committer | Only show commits in which the committer entry matches the specified string.|
-|--grep | Only show commits with a commit message containing the string|
-|-S{text}  |Only show commits adding or removing code matching the string|
+|--since, --after | Limit the commits to those made after the specified date |
+|--until, --before | Limit the commits to those made before the specified date |
+|--author       | Only show commits in which the author entry matches the specified string |
+|--committer    | Only show commits in which the committer entry matches the specified string |
+|--grep         | Only show commits with a commit message containing the string |
+|-S{text}       | Only show commits adding or removing code matching the string |
 
 #### Format Options
+
 | Option        | Function      |
 | ------------- |:-------------:|
-| %H | Commit hash |
-|%h |Abbreviated commit hash|
-|%T |Tree hash|
-|%t |Abbreviated tree hash|
-|%P |Parent hashes|
-|%p |Abbreviated parent hashes|
-|%an |Author name|
-|%ae |Author email|
-|%ad |Author date (format respects the --date=option)|
-|%ar |Author date, relative|
-|%cn |Committer name|
-|%ce |Committer email|
-|%cd |Committer date|
-|%cr |Committer date, relative|
-|%s |Subject|
+| %H  | Commit hash |
+| %h  | Abbreviated commit hash |
+| %T  | Tree hash |
+| %t  | Abbreviated tree hash |
+| %P  | Parent hashes |
+| %p  | Abbreviated parent hashes |
+| %an | Author name |
+| %ae | Author email |
+| %ad | Author date (format respects the --date=option) |
+| %ar | Author date, relative |
+| %cn | Committer name |
+| %ce | Committer email |
+| %cd | Committer date |
+| %cr | Committer date, relative |
+| %s  | Subject |
 
 #### Undoing Things
 `git commit --amend` try to commit again, used to change files or message of commit.

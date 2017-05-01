@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: markdown
 title: "Resume"
 custom_css: css/github-markdown.css
 ---
@@ -11,7 +11,6 @@ Raleigh, NC -
 (2016) B.S. in Computer Science - GPA 3.0
 
 ## Skills
- 
  
 | Category    | My skills (most &rarr; least familiar)                      |
 |-------------|-------------------------------------------------------------|

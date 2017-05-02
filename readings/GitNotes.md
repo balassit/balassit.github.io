@@ -221,7 +221,8 @@ Git simplifies things by moving the pointer forward because there is no divergen
 
 #### Delete a branch
 
-`git branch -d hotfix` deletes a branch from local machine.
+`git branch -d [branch-name]` deletes a branch from local machine.
+'git push origin --delete [branch_name]' deletes a remote branch
 
 #### Merge Commit
 When a branch has diverged from another and is merged back in, a special commit is made from a

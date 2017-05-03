@@ -34,3 +34,7 @@ page_data:
   - title: "Training"
     id: "training"
     url: "training"
+
+  - title: "Projects"
+    id: "projects"
+    url: "projects"

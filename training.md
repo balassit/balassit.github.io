@@ -30,7 +30,6 @@ This is a helpful way to learn what the optimal paces are for working out at a g
  - [Ab Routine]({{ site.baseurl }}/pdf/web/viewer.html?file=Ab Routine.pdf)
  - [Hip and Glute Exercises]({{ site.baseurl }}/pdf/web/viewer.html?file=Hip and glute exercises.pdf)
  - [Strength Training]({{ site.baseurl }}/pdf/web/viewer.html?file=Strength training.pdf)
-
  - [Wolf Routine]({{ site.baseurl }}/pdf/web/viewer.html?file=Wolf routine.pdf)
  - [Full Body Strength]({{ site.baseurl }}/pdf/web/viewer.html?file=full body strength.pdf)
  - [Plyometrics]({{ site.baseurl }}/pdf/web/viewer.html?file=Plyometrics.pdf)

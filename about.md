@@ -20,3 +20,4 @@ In 2015, the women finished 11th in the nation.
  - [GitHub](http://https://github.com/balassit/)
  - [LinkedIn](https://www.linkedin.com/in/blake-lassiter-b92bb26b)
  - [NCSU Club XC/Track](https://clubs.ncsu.edu/crosscountry/)
+

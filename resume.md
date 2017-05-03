@@ -24,8 +24,11 @@ Raleigh, NC -
 
 ## Work Experience
 
+### Capital One - Software Engineer
+*Richmond, VA &sdot; 2017 - Present*
+
 ### Bioventus - Business Analyst Summer Intern
-*Durham, NC - Summer 2017*
+*Durham, NC &sdot; Summer 2017*
  - Designed integrations using SAP and REST capabilities  interface to enhance client accessibility
  - Implemented DocuSign API with current configurations of SharePoint Online, allowing access to contracts as sorted lists with filters.
  - Data cleanse of customer records in database using SQL queries.
@@ -38,11 +41,15 @@ Raleigh, NC -
 
 #### Senior Design: 
  - Role: Team  Leader
- - 
+ - Agile team that created an interactive application to display and store security documents for
+ PureCloud's security team. 
 
 
 #### Human Computer Interaction:
- - Focus on 
+ - Focus on design, evaluation and implementation of interactive applications
+ - Created Android app for novice cooks which provided steps to complete a meal in an efficient
+  manner along with consolidated ingredient list
+ - Scenario based designed process used along with user testing throughout application devleopment
 
 
 #### Database Management: 

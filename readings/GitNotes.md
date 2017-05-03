@@ -25,7 +25,7 @@ just a link to the previous identical file already stored.
 
 
 - Operations almost instant because on latency of network
-Can commit work until getting a netowrk connection to upload.
+Can commit work until getting a network connection to upload.
 
 - As in any VCS, you can lose or mess up changes you haven’t
 committed yet; but after you commit a snapshot into Git,

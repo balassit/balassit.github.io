@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Projects"
+title: "green beans"
 ---
 
 *a beginner’s guide to cooking*

@@ -35,7 +35,7 @@ I have a beautiful and incredibly intelligent cat named Maggie!
 If you need to contact me, or want more information: 
 
  - Email: blakelass@gmail.com
- - [GitHub](http://https://github.com/balassit/)
+ - [GitHub](https://github.com/balassit/)
  - [LinkedIn](https://www.linkedin.com/in/blake-lassiter-b92bb26b)
- - [NCSU Club XC/Track](https://clubs.ncsu.edu/crosscountry/)
+ - [NCSU Club XC/Track](https://www.clubs.ncsu.edu/crosscountry/)
 

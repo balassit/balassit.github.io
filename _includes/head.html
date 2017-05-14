@@ -24,6 +24,13 @@
     <script src="{{ js_file }}"></script>
     {% endfor %}
 
-    <title>{{ page.title }}</title>
+    <title>
+        {% if page.title == "Home" %}
+            {{ site.title }}
+        {% else %}
+            {{ page.title }} &middot; {{ site.title }}
+        {% endif %}
+    </title>
+
 </head>
 

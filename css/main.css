@@ -1,11 +1,29 @@
 html {
    height: 100%;
 }
+
+.wrap {
+    position: relative;
+    width: 100%;
+}
+.sidebar {
+ background-color:#c9c;
+ }
+main {
+
+}
+main li {
+     line-height: 1.4;
+ }
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    margin: 60px auto;
-    width: 87%;
+    max-width: 87rem;
     min-height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav ul, footer ul {
     padding: 0px;
@@ -37,6 +55,13 @@ p {
     font-size: 1em;
     line-height: 1.4em;
 }
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem;
+    border-radius: 5px;
+
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -55,10 +80,6 @@ ul.posts li {
 
   font-size: 60px;
 
-}
-
-main li {
-    line-height: 1.4;
 }
 
 /* Small screens */
@@ -82,4 +103,16 @@ main li {
         margin-top: 20px;
     }
 }
+
+@media (min-width: 56em) {
+  img {
+    max-width: 38rem;
+  }
+}
+@media (min-width: 38em) {
+  img {
+    max-width: 35rem;
+  }
+}
+
 

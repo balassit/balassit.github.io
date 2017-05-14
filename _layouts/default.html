@@ -3,16 +3,13 @@
     {% include head.html %}
 
 	<body>
-	    {% include header.html %}
-
-            {% include sidebar.html %}
-
+        <div class="wrap">
+            {% include header.html %}
             <main>
-	            {{ content }}
+                {{ content }}
             </main>
+        </div>
 
-            <a class=”back-to-top” style=”display: inline;” href=#>Back to Top</a>
-            {% include footer.html %}
 
-        </body>
+    </body>
 </html>

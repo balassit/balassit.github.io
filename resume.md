@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: "Resume"
-custom_css: css/github-markdown.css
+custom_css: css/github-markdown.min.css
 ---
 
 ## Education

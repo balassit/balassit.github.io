@@ -1,7 +1,7 @@
 ---
 layout: gitnotes-markdown
 title: "Readings"
-custom_css: css/github-markdown.css
+custom_css: css/github-markdown.min.css
 ---
 ## Version Control
 

@@ -8,11 +8,11 @@ I am a Software Engineer at Capital One in Richmond, VA. I am a part of the Tech
 which is a 2 year rotational in which I transition to 2 teams to explore different roles, teams and technologies.
 In my first year, I am working in the Shared Tech department as a member of the PRIME team.
 
-![Capital One 2017 TDP Group]({{ site.baseurl }}/img/C1TDP2017.JPG)
+![Capital One 2017 TDP Group]({{ site.baseurl }}/img/C1TDP2017.jpg)
 
 I graduated from North Carolina State University in December of 2016 with a B.S. in Computer Science and Economic minor.
 
-![Graduation]({{ site.baseurl }}/img/Graduation.JPG)
+![Graduation]({{ site.baseurl }}/img/Graduation.jpg)
 
 
 I was the 2016 President and Coach of the Cross Country and Track Club at NC State.
@@ -22,15 +22,15 @@ The men won the Southeast Regional titles from 2014-2016, finishing 12th in the 
 The women won their first regional title in 2016, after improving on 3rd and 2nd place finishes in 214 and 2015, respectively.
 In 2015, the women finished 11th in the nation.
 
-![2016 XC Regional Chamipions]({{ site.baseurl }}/img/NCStateClubXC.JPG)
+![2016 XC Regional Chamipions]({{ site.baseurl }}/img/NCStateClubXC.jpg)
 
 I love to travel! Occasionally, I fly off to the beach, to watch the best athletes in the world, or visit friends in other countries!
 
-![Paris]({{ site.baseurl }}/img/Paris.JPG)
+![Paris]({{ site.baseurl }}/img/Paris.jpg)
 
 I have a beautiful and incredibly intelligent cat named Maggie!
 
-![Maggie]({{ site.baseurl }}/img/Maggie.JPG)
+![Maggie]({{ site.baseurl }}/img/Maggie.jpg)
 
 If you need to contact me, or want more information: 
 

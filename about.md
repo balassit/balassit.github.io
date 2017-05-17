@@ -34,8 +34,43 @@ I have a beautiful and incredibly intelligent cat named Maggie!
 
 If you need to contact me, or want more information: 
 
- - Email: blakelass@gmail.com
+ - Email: blakelass@gmail.com 
  - [GitHub](https://github.com/balassit/)
  - [LinkedIn](https://www.linkedin.com/in/blake-lassiter-b92bb26b)
  - [NCSU Club XC/Track](https://www.clubs.ncsu.edu/crosscountry/)
-
+ 
+ You may also submit an email from this form directly.
+ 
+<form class="pure-form pure-form-stacked" id="contactform" method="POST">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="text">Name</label>  
+            <input class="pure-input-1-3" id="name" name="name" type="text" placeholder="Your name">
+        </div>
+        <div class="pure-control-group">
+            <label for="email">Email Address</label>  
+            <input class="pure-input-1-3" id="email" name="_replyto" type="text" placeholder="Your email">
+        </div>
+        <div class="pure-control-group">
+            <label for="subject">Subject</label>  
+            <input class="pure-input-1-3" id="_subject" name="_subject" type="text" placeholder="Subject">
+        </div>
+        <div class="pure-control-group">
+            <label for="message">Message</label>
+            <textarea class="pure-input-1-3" rows="8" id="message" name="message"></textarea>
+        </div>
+        <div class="pure-controls">
+            <button class="pure-button" id="send" name="send">
+                Send &nbsp;
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </fieldset>
+    <!-- Formspree hidden fields -->
+    <input type="hidden" name="_next" value="//balassit.github.io/thankyou" />
+    <input type="text" name="_gotcha" style="display:none">
+</form>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'blakelass' + '@' + 'gmail' + '.' + 'com');
+</script> 

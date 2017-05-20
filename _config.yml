@@ -6,6 +6,7 @@ permalink:           pretty
 
 title: Blake Lassiter
 name: Blake Lassiter
+description: 'The website of Blake Lassiter'
 baseurl: ''
 markdown: kramdown
 

@@ -1,14 +1,32 @@
 html {
    height: 100%;
 }
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 78rem;
+    min-height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+  /* Prevent scroll on narrow devices */
+html,
+body {
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -.025rem;
+}
 
 .wrap {
     position: relative;
     width: 100%;
 }
-.sidebar {
- background-color:#c9c;
- }
 main {
     margin-top: 2rem;
     margin-left: auto;
@@ -23,16 +41,6 @@ header {
     margin-right: auto;
 }
 .page {
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    max-width: 78rem;
-    min-height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -52,16 +60,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-}
-h1 { font-size: 3.0em; }
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.3em; }
-h5 { font-size: 1.1em; }
-h6 { font-size: 0.9em; }
-
-h1 {
-    font-size: 3em;
 }
 p {
     font-size: 1em;
@@ -94,37 +92,57 @@ ul.posts li {
 
 }
 
-/* Small screens */
-@media screen and (max-width:375px) {
-    header{
-    }
-    footer {
-        padding-bottom: 30px;
-    }
-    @-ms-viewport{
-        width: device-width;
-        initial-scale: 1;
-        maximum-scale: 1
-        user-scalable: no;
-    }
+.container {
+    max-width: 28rem;
 }
 
-/* Large screens */
-@media screen and (min-width: 376px) {
-    nav {
-        margin-top: 20px;
-    }
+@media (min-width: 38em) {
+  img {
+    max-width: 35rem;
+  }
+  .container {
+    max-width: 35rem;
+  }
 }
 
 @media (min-width: 56em) {
   img {
     max-width: 38rem;
   }
-}
-@media (min-width: 38em) {
-  img {
-    max-width: 35rem;
+  .container {
+    max-width: 38rem;
   }
 }
 
+/* mobile devices */
+@media only screen and (max-device-width: 578px) {
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  header{
+  }
+  footer {
+  }
+  @-ms-viewport{
+      width: device-width;
+      initial-scale: 1;
+      maximum-scale: 1
+      user-scalable: no;
+  }
+}
 
+/* large devices */
+@media only screen and (min-device-width: 578px) {
+ .show-mobile {
+     display: none;
+ }
+ .hide-mobile {
+     display: block;
+ }
+ nav {
+     margin-top: 20px;
+ }
+}

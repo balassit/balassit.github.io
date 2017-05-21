@@ -216,6 +216,23 @@ z-index: 10;
     color: #6a9fb5;
 }
 
+
+/* Orange */
+.theme-base-09 .sidebar,
+.theme-base-09 .sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #F5864D;
+
+}
+.theme-base-09 .sidebar-toggle:active {
+    color: #FFFFFF;
+    background-color: #555555;
+}
+.theme-base-09 .container a,
+.theme-base-09 .sidebar-toggle,
+.theme-base-09 .related-posts li a:hover {
+  color: #FFFFFF;
+}
+
 /*
 * Overlay sidebar
 *

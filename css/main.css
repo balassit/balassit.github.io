@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrap {
-    margin-left: 2rem;
+    position: relative;
     width: 100%;
 }
 main {

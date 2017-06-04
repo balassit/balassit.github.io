@@ -23,6 +23,7 @@ select:focus {
     display: block;
     padding-top: 1.5rem;
     text-align: center;
+    font-size: 1.4rem;
     color: #215c98;
 }
 .tabs [class^="tab"] [type="checkbox"],

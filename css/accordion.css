@@ -42,20 +42,16 @@ select:focus {
 .tabs [class^="tab"] [type="checkbox"]:hover, .tabs [class^="tab"] [type="checkbox"]:focus,
 .tabs [class*=" tab"] [type="checkbox"]:hover,
 .tabs [class*=" tab"] [type="checkbox"]:focus {
-      border-bottom: 1px solid #215c98;
 }
 .tabs [class^="tab"] [type="checkbox"]:checked,
 .tabs [class*=" tab"] [type="checkbox"]:checked {
-      border-bottom: 1px solid #215c98;
 }
 .tabs [class^="tab"] [type="checkbox"]:checked + div,
 .tabs [class*=" tab"] [type="checkbox"]:checked + div {
-      opacity: 1;
 }
 .tabs [class^="tab"] [type="checkbox"] + div,
 .tabs [class*=" tab"] [type="checkbox"] + div {
     display: block;
-    opacity: 0;
     padding: 1rem 0;
     width: 90%;
     -webkit-transition: all 0.3s ease-in-out;

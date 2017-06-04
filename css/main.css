@@ -23,6 +23,18 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -.025rem;
 }
 
+h1 {
+    text-align: center;
+}
+
+label {
+    font-size:1.4rem;
+}
+
+nav{
+    text-align: center;
+}
+
 .wrap {
     position: relative;
     width: 100%;
@@ -53,6 +65,8 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 a {
     text-decoration: none;
@@ -77,8 +91,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 

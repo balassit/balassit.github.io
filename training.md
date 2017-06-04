@@ -36,9 +36,7 @@ This is a helpful way to learn what the optimal paces are for working out at a g
 
 ### Training Documents 
 
- - [History of Running]({{ site.baseurl }}/pdf/web/viewer.html?file=History%20of%20running.pdf)
- - [Nick Symmonds Log]({{ site.baseurl }}/pdf/web/viewer.html?file=Nick%20symmonds%20log.pdf)
- - [Arthur Lydiard]({{ site.baseurl }}/pdf/web/viewer.html?file=Arthur%20Lydiard.pdf)
+ - [Nick Symmonds Training Log]({{ site.baseurl }}/pdf/web/viewer.html?file=Nick%20symmonds%20log.pdf)
  - [VO2 Conversions]({{ site.baseurl }}/pdf/web/viewer.html?file=VO2 Conversions.pdf)
 
 

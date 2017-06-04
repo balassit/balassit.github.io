@@ -1,0 +1,79 @@
+---
+layout: default
+---
+{{ content }}
+<div class="tabs">
+    <div class="tab-3">
+        <label for="tab3-1">Software</label>
+        <input id="tab3-1" name="tabs-three" type="checkbox" checked="checked" onchange="displayText1(this.checked)">
+        <div id ="tab1">
+            <h3 id="git-book-20"><a href="/pdf/web/viewer.html?file=progit.pdf">Git Book 2.0</a></h3>
+            <p>All things Git. An in depth explanation of how to use Git and what it is.</p>
+            <h3 id="git-notes"><a href="/readings/GitNotes">Git Notes</a></h3>
+            <p>Notes that I have taken from the Git Book as an abbreviated versions, with frequently used commands.</p>
+        </div>
+    </div>
+    <div class="tab-3">
+        <label for="tab3-2">Running</label>
+        <input id="tab3-2" name="tabs-three" type="checkbox" onchange="displayText2(this.checked)">
+        <div id ="tab2">
+            <h3 id="the-science-of-running"><a href="https://www.amazon.com/Science-Running-limit-maximize-performance/dp/0615942946?tag=onanofthtr-20">The Science of Running</a></h3>
+            <p>Author: Steve Magness</p>
+            <p>Review:</p>
+            <h3 id="what-comes-first-cardio-or-weights"><a href="https://read.amazon.com/kp/embed?asin=B004MMEIT6&amp;preview=newtab&amp;linkCode=kpe&amp;ref_=cm_sw_r_kb_dp_crfnzbPFZ1514">What Comes First, Cardio or Weights?</a></h3>
+            <p>Author: Alex Hutchinson</p>
+            <p>Review:</p>
+            <h3 id="road-to-the-top"><a href="https://www.amazon.com/Road-Top-Systematic-Approach-Training/dp/1880047349?tag=onanofthtr-20">Road to the Top</a></h3>
+            <p>Author: Joe Vigil</p>
+            <p>Review:</p>
+            <h3 id="the-mechanics-of-athletics"><a href="https://www.amazon.com/Mechanics-Athletics-Geoffrey-Harry-George/dp/0340089059?tag=onanofthtr-20">The Mechanics of Athletics</a></h3>
+            <p>Author: Geoffrey Dyson</p>
+            <p>Review:</p>
+            <h3 id="a-history-of-training-theory-and-methods-for-elite-runners-through-1975"><a href="/pdf/web/viewer.html?file=History%20of%20running.pdf">A History of Training Theory and Methods for Elite Runners Through 1975</a></h3>
+            <p>Author: Nicholas Bourne</p>
+            <p>Review:</p>
+            <h3 id="arthyr-lydiards-athletic-training"><a href="/pdf/web/viewer.html?file=Arthur%20Lydiard.pdf">Arthyr Lydiard’s Athletic Training</a></h3>
+            <p>Author: Arthur Lydiard</p>
+            <p>Review:</p>
+        </div>
+    </div>
+    <div class="tab-3">
+        <label for="tab3-3">Thinking</label>
+        <input id="tab3-3" name="tabs-three" type="checkbox" onchange="displayText3(this.checked)">
+        <div id ="tab3">
+            <h3 id="antifragile-things-that-gain-from-disorder"><a href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680?tag=onanofthtr-20">Antifragile: Things that Gain from Disorder</a></h3>
+            <p>Author: Nassim Taleb</p>
+            <p>Review:</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function displayText1(checked){
+        if(checked) {
+            $("#tab1").fadeIn();
+
+        }
+        else {
+            $("#tab1").fadeOut();
+        }
+    }
+    function displayText2(checked){
+        if(checked) {
+            $("#tab2").fadeIn();
+
+        }
+        else {
+            $("#tab2").fadeOut();
+        }
+    }
+    function displayText3(checked){
+        if(checked) {
+            $("#tab3").fadeIn();
+
+        }
+        else {
+            $("#tab-3").fadeOut();
+        }
+    }
+</script>

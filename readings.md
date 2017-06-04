@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "Readings"
+layout: accordion
+title: Readings
+custom_css:
+- css/accordion.css
 ---
- - [Git Book 2.0]({{ site.baseurl }}/pdf/web/viewer.html?file=progit.pdf)
- - [Git Notes]({{ site.baseurl }}/readings/GitNotes)

@@ -1,0 +1,90 @@
+/* Acordeon styles */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.tabs {
+    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+    cursor: pointer;
+    display: block;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.tabs [class^="tab"] [type="checkbox"],
+.tabs [class*=" tab"] [type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs [class^="tab"] [type="checkbox"]:hover, .tabs [class^="tab"] [type="checkbox"]:focus,
+.tabs [class*=" tab"] [type="checkbox"]:hover,
+.tabs [class*=" tab"] [type="checkbox"]:focus {
+      border-bottom: 1px solid #215c98;
+}
+.tabs [class^="tab"] [type="checkbox"]:checked,
+.tabs [class*=" tab"] [type="checkbox"]:checked {
+      border-bottom: 2px solid #215c98;
+}
+.tabs [class^="tab"] [type="checkbox"]:checked + div,
+.tabs [class*=" tab"] [type="checkbox"]:checked + div {
+      opacity: 1;
+}
+.tabs [class^="tab"] [type="checkbox"] + div,
+.tabs [class*=" tab"] [type="checkbox"] + div {
+    display: block;
+    opacity: 0;
+    padding: 1rem 0;
+    width: 90%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.tabs .tab-3 {
+    width: 100%;
+}
+.tabs .tab-3 [type="checkbox"] + div {
+    margin-left: 200%;
+}
+.tabs .tab-3 [type="checkbox"]:checked + div {
+    margin-left: 0;
+}
+.tabs .tab-3:nth-child(1) [type="checkbox"] + div {
+    display: block;
+}
+.tabs .tab-3:nth-child(1) [type="checkbox"]:checked + div {
+}
+.tabs .tab-3:nth-child(2) [type="checkbox"] + div {
+    display: block;
+}
+.tabs .tab-3:nth-child(2) [type="checkbox"]:checked + div {
+}
+.tabs .tab-3:nth-child(3) [type="checkbox"] + div {
+    display: block;
+}
+.tabs .tab-3:nth-child(3) [type="checkbox"]:checked + div {
+}
+
+#tab2, tab3 {
+    display: none;
+}

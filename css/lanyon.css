@@ -134,8 +134,9 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-color: #fff;
+    color: #fff;
     background-color: #555;
+        transform: translateX(14rem);
 }
 
 .sidebar-toggle:active:before,
@@ -186,7 +187,7 @@ color: #fff;
 }
 
 #sidebar-checkbox:checked + .sidebar {
-z-index: 10;
+    z-index: 10;
     visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
@@ -194,6 +195,10 @@ z-index: 10;
 #sidebar-checkbox:checked ~ .sidebar-toggle {
     -webkit-transform: translateX(14rem);
     -ms-transform: translateX(14rem);
+    transform: translateX(14rem);
+}
+
+#sidebar-checkbox.sidebar-checkbox:checked {
     transform: translateX(14rem);
 }
 

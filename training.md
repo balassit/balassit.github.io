@@ -2,11 +2,10 @@
 layout: page
 title: "Training"
 ---
-## Pace Chart
+## [Pace Chart]({{page.url}}/pace-chart)
 
 Find out what predicted race pace times are from a given 5k time.
 This is a helpful way to learn what the optimal paces are for working out at a given race pace.
- - [Pace Chart]({{page.url}}/pace-chart)
 
 ## Training Plans
 

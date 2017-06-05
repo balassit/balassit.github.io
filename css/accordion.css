@@ -20,7 +20,7 @@ select:focus {
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
     cursor: pointer;
-    display: none;
+    display: block;
     padding-top: 1.5rem;
     text-align: center;
     font-size: 1.4rem;
@@ -32,7 +32,7 @@ select:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    display: block;
+    display: none;
     width: 100%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

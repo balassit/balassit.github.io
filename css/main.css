@@ -15,7 +15,7 @@ body {
   /* Prevent scroll on narrow devices */
 html,
 body {
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;

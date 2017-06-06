@@ -12,8 +12,10 @@ body {
     margin-right: auto;
     padding-bottom: 30px;
 }
-html, body {
-    overflow-x: auto;
+  /* Prevent scroll on narrow devices */
+html,
+body {
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -108,9 +110,38 @@ ul.posts li {
     max-width: 28rem;
 }
 
+@media (min-width: 38em) {
+  img {
+    max-width: 35rem;
+  }
+  .container {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 56em) {
+  img {
+    max-width: 38rem;
+  }
+  .container {
+    max-width: 38rem;
+  }
+}
+
+/* Pure CSS modification*/
+#contactform fieldset div input, #contactform fieldset div textarea{
+    width: 35rem;
+}
+
+
 /* mobile devices */
 @media only screen
+and (min-device-width : 320px)
 and (max-device-width : 35rem) {
+  /* Pure CSS modification*/
+  #contactform fieldset div input, #contactform fieldset div textarea{
+    width: 100%;
+  }
   .show-mobile {
     display: block;
   }
@@ -127,17 +158,10 @@ and (max-device-width : 35rem) {
       maximum-scale: 1
       user-scalable: no;
   }
-
 }
 
 /* large devices */
 @media only screen and (min-device-width: 35rem) {
-  img {
-    max-width: 35rem;
-  }
-  .container {
-    max-width: 35rem;
-  }
  .show-mobile {
      display: none;
  }

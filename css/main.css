@@ -127,9 +127,7 @@ and (max-device-width : 35rem) {
       maximum-scale: 1
       user-scalable: no;
   }
-  .pure-form fieldset {
-      width: 100%;
-  }
+
 }
 
 /* large devices */
@@ -148,8 +146,5 @@ and (max-device-width : 35rem) {
  }
  nav {
      margin-top: 20px;
- }
- .pure-form fieldset {
-     width: 35rem;
  }
 }

@@ -89,6 +89,6 @@ select:focus {
 .tabs .tab:nth-child(4) [type="checkbox"]:checked + div {
 }
 
-#tab2, #tab3, #tab4 {
+#tab1, #tab2, #tab3, #tab4 {
     display: none;
 }

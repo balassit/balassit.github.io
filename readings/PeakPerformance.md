@@ -1,10 +1,10 @@
+---
 layout: page
 title: "Peak Performance Notes"
 ---
 
 As I read Peak Performance, by Brad Stulberg and Steve Magness, I will provide what I find useful from the book, 
 or notable points that I disagree with. I will also inject my own ideas as they surface through each section. 
-
 
 ## Introduction
 
@@ -46,3 +46,4 @@ and are able to reach our goal, but are left unsatisfied with it. It was not wha
 "Passion is the channel by which we receive the greatest blessings" -- Plato
 
 However, you can be consumed by your passions. Watch for an `upcoming article` on what passion is and how it relates to your goals.
+

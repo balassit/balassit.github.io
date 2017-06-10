@@ -59,31 +59,36 @@ select:focus {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.tabs .tab-3 {
+.tabs .tab {
     width: 100%;
 }
-.tabs .tab-3 [type="checkbox"] + div {
+.tabs .tab [type="checkbox"] + div {
     margin-left: 200%;
 }
-.tabs .tab-3 [type="checkbox"]:checked + div {
+.tabs .tab [type="checkbox"]:checked + div {
     margin-left: 0;
 }
-.tabs .tab-3:nth-child(1) [type="checkbox"] + div {
+.tabs .tab:nth-child(1) [type="checkbox"] + div {
     display: block;
 }
-.tabs .tab-3:nth-child(1) [type="checkbox"]:checked + div {
+.tabs .tab:nth-child(1) [type="checkbox"]:checked + div {
 }
-.tabs .tab-3:nth-child(2) [type="checkbox"] + div {
+.tabs .tab:nth-child(2) [type="checkbox"] + div {
     display: block;
 }
-.tabs .tab-3:nth-child(2) [type="checkbox"]:checked + div {
+.tabs .tab:nth-child(2) [type="checkbox"]:checked + div {
 }
-.tabs .tab-3:nth-child(3) [type="checkbox"] + div {
+.tabs .tab:nth-child(3) [type="checkbox"] + div {
     display: block;
 }
-.tabs .tab-3:nth-child(3) [type="checkbox"]:checked + div {
+.tabs .tab:nth-child(3) [type="checkbox"]:checked + div {
+}
+.tabs .tab:nth-child(4) [type="checkbox"] + div {
+    display: block;
+}
+.tabs .tab:nth-child(4) [type="checkbox"]:checked + div {
 }
 
-#tab2, tab3 {
+#tab2, #tab3, #tab4 {
     display: none;
 }

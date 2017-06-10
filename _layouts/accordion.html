@@ -3,10 +3,10 @@ layout: default
 ---
 {{ content }}
 <div class="tabs">
-    <div class="tab-3">
-        <label for="tab3-1">Software</label>
+    <div class="tab">
+        <label for="tab-1">Software</label>
         <hr>
-        <input id="tab3-1" name="tabs-three" type="checkbox" checked="checked" onchange="displayText1(this.checked)">
+        <input id="tab-1" name="tabs-three" type="checkbox" checked="checked" onchange="displayText1(this.checked)">
         <div id ="tab1">
             <h3 id="git-book-20"><a href="/pdf/web/viewer.html?file=progit.pdf">Git Book 2.0</a></h3>
             <p>All things Git. An in depth explanation of how to use Git and what it is.</p>
@@ -14,10 +14,10 @@ layout: default
             <p>Notes that I have taken from the Git Book as an abbreviated versions, with frequently used commands.</p>
         </div>
     </div>
-    <div class="tab-3">
-        <label for="tab3-2">Running</label>
+    <div class="tab">
+        <label for="tab-2">Running</label>
         <hr>
-        <input id="tab3-2" name="tabs-three" type="checkbox" onchange="displayText2(this.checked)">
+        <input id="tab-2" name="tabs-three" type="checkbox" onchange="displayText2(this.checked)">
         <div id ="tab2">
             <h3 id="the-science-of-running"><a href="https://www.amazon.com/Science-Running-limit-maximize-performance/dp/0615942946?tag=onanofthtr-20">The Science of Running</a></h3>
             <p>Author: Steve Magness</p>
@@ -39,10 +39,10 @@ layout: default
             <p>Review:</p>
         </div>
     </div>
-    <div class="tab-3">
-        <label for="tab3-3">Thinking</label>
+    <div class="tab">
+        <label for="tab-3">Thinking</label>
         <hr>
-        <input id="tab3-3" name="tabs-three" type="checkbox" onchange="displayText3(this.checked)">
+        <input id="tab-3" name="tabs-three" type="checkbox" onchange="displayText3(this.checked)">
         <div id ="tab3">
             <h3 id="antifragile-things-that-gain-from-disorder"><a href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680?tag=onanofthtr-20">Antifragile: Things that Gain from Disorder</a></h3>
             <p>Author: Nassim Taleb</p>
@@ -50,6 +50,16 @@ layout: default
             <h3 id="peak-performance"><a href="https://www.amazon.com/Peak-Performance-Advantage-Science-Success/dp/162336793X">Peak Performance</a></h3>
             <p>Author: Brad Stulberg, Steve Magness</p>
             <p id="peak-performance-review">Review: <a href="/readings/PeakPerformance">My Notes</a></p>
+        </div>
+    </div>
+
+    <div class="tab">
+        <label for="tab-4">My Thoughts</label>
+        <hr>
+        <input id="tab-4" name="tabs-three" type="checkbox" onchange="displayText4(this.checked)">
+        <div id ="tab4">
+            <h3 id="my-thoughts-peak-performance"><a href="/readings/PeakPerformance">Peak Performance</a></h3>
+            <p>I list some of the key take-aways of the book, along with thoughts that came to mind during the read.</p>
         </div>
     </div>
 </div>
@@ -79,7 +89,16 @@ layout: default
 
         }
         else {
-            $("#tab-3").fadeOut();
+            $("#tab3").fadeOut();
+        }
+    }
+    function displayText4(checked){
+        if(checked) {
+            $("#tab4").fadeIn();
+
+        }
+        else {
+            $("#tab4").fadeOut();
         }
     }
 </script>

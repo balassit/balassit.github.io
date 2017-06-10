@@ -47,3 +47,11 @@ and are able to reach our goal, but are left unsatisfied with it. It was not wha
 
 However, you can be consumed by your passions. Watch for an `upcoming article` on what passion is and how it relates to your goals.
 
+**3. Breakthroughs**: 
+Breakthroughs occur when people realize the arbitrary nature of their own field and open their minds to the possibility 
+of possibility. You can create channels to learn how to solve new problems by approaching them with a different mindset.
+
+**What to expect from the book**: 
+ - scientific cycle behind growth and development
+ - how to prime for peak performance and daily productivity
+ - the power of purpose as a performance enhanceer

@@ -10,18 +10,17 @@ or notable points that I disagree with. I will also inject my own ideas as they 
 
 ### Competing Against The Machines
 
-You make a very bold and seemingly uninformed view on technology. We do not compete against technology. 
-Computers (technology) enables so many advances of which you are certainly aware. 
+There is a very bold and seemingly uninformed view on technology presented in this book. We do not compete against technology. 
+Computers (technology) enables so many advances. 
 Eliminating jobs to advances in technology increases global wealth. I still love a very simple anecdote:
 A man was told that a group of men were given picks and shovels in order to lengthen the work of construction 
 (rather than machinery), to which he replied why not give them spoons and forks instead of picks and shovels 
 if the object was to lengthen the time to complete the job.
 
 We are in a world where creativity will inspire new works to which jobs will be created. 
-My worry is that you extend fearing expansions of technology and some absurd war that is 
-mounted by means I do not understand.
 
-### Key Take-aways
+
+## Key Take-aways
 
 **1. At what cost will be push ourselves to levels that are beyond our natural limit?**
 
@@ -55,3 +54,54 @@ of possibility. You can create channels to learn how to solve new problems by ap
  - scientific cycle behind growth and development
  - how to prime for peak performance and daily productivity
  - the power of purpose as a performance enhanceer
+
+**4. Mindset**:
+
+**What is mindset?**
+A disposition to something that may happen. 
+A filter of how you interpret life and a projector of what you want to be in the future.
+
+Practice in an easier environment things that you find difficult. What do you want to set your mind to? This can be 
+simple or short. How do you want to be? How does that match the environment that you are in?
+
+**5. Stress + Rest = Growth**: The backbone of the book.
+Mental and physical tasks take a toll and it is crucial to incorporate rest just as you would the physical or mental challenge.
+
+Be hesitant to offer help when teaching. Let others learn on their own and once they are impeded, give help. Fail productively.
+
+Walk away when you are stuck. Creativity can be spurred by taking yourself out of the situation. Take a walk, look at nature, and practice mindfulness techniques.
+
+Use social interactions as a recovery and relaxation tool. Surround yourself with positive people and allow yourself to 
+ shift focus away from stressors.
+
+Check out the out the Art of Learning Book
+
+**6.**:
+Take a moment to say something nice about each person you see before engaging with them in your head as a primer for positive attitude.
+
+"Disconnection work from life is an illusion." - Peak Performance
+
+### Developing your life's purpose statement 
+
+#### List up to 5 values that you hold in life:
+
+1. Education
+3. Enjoyment
+2. Mastery
+4. Relationships
+
+#### Define each value in a way that personalizes it to your life in one sentence:
+
+1. Education: gain knowledge that will allow me to explore new areas and further understand those of which I already pursue.
+3. Enjoyment: An internal state in which you find great pleasure and comfort.
+2. Mastery: Fluency in a field or subject such that you are able to teach, share, and innovate new ideas that promote greater achievements.
+4. Relationships: Connection with others to share experiences and learn how to better develop ourselves.
+
+#### Rank your values
+
+1. Enjoyment
+2. Mastery
+3. Relationships
+4. Education
+
+

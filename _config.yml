@@ -4,11 +4,13 @@
 permalink:           pretty
 
 
-title: Blake Lassiter
-name: Blake Lassiter
+# Setup
+title:       Blake Lassiter
+name:        Blake Lassiter
+tagline:     Software Engineer
 description: 'The website of Blake Lassiter'
-baseurl: ''
-markdown: kramdown
+baseurl:     ''
+markdown:    kramdown
 
 page_data:
 

@@ -35,6 +35,10 @@ nav{
     text-align: center;
 }
 
+.masthead-title {
+    text-align: center;
+}
+
 .wrap {
     position: relative;
     width: 100%;
@@ -145,12 +149,6 @@ and (max-device-width : 35rem) {
   #contactform fieldset div input, #contactform fieldset div textarea{
     width: 100%;
   }
-  .show-mobile {
-    display: block;
-  }
-  .hide-mobile {
-    display: none;
-  }
   header{
   }
   footer {
@@ -165,12 +163,6 @@ and (max-device-width : 35rem) {
 
 /* large devices */
 @media only screen and (min-device-width: 35rem) {
- .show-mobile {
-     display: none;
- }
- .hide-mobile {
-     display: block;
- }
  nav {
      margin-top: 20px;
  }

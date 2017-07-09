@@ -27,14 +27,16 @@ at home because he was used to the noise.
  - Experience should be about learning and passion first, then competition later on. This is why children should not 
  be trained to win at an early age, but rather on learning the fundamentals and growing their passion.
 
-### Chapter 2: Losing to Win
+## Chapter 2: Losing to Win
 
  - You can learn from your failures; must be able to frame with properly
  - Give time away to reconnect after great wins or failures
 
-### Chapter 4: Approaches to Learning
-
- - Reflection question: What allows some to succeed and what is the point of it?
+## Chapter 3: Two Approaches to Learning
+ - Reflection question: What is the difference that allows some to fit into that narrow window to the top?
+ What is the point? If ambition spells probably disappointment, why pursue excellence?
+ 
+ Have a well-thought-out approach that inspires resilience, the ability to make connections between diverse pursuits, and day-to-day enjoyment of the process.
  
 #### Entity vs Incremental Theory of Intelligence
 
@@ -61,10 +63,12 @@ Focus is on long term development instead of quick results. What happens when yo
  - Don't live in a shell of mediocrity; growth comes at the expense of comfort or safety
    + example is the hermit crab who abandons shell
  - Gain from your experiences along the way; it will lead to happiness.
- 
+
 #### Focusing on the End Game
- 
-Starting with reduced complexity and clear principles. Define a purpose at the start.
+
+Many will start with the beginning of the game as the starting point with the immediate goal to win as soon as possible.
+Start in different situations with reduced complexity and clear principles. 
+Define a purpose at the start.
  
 ### Chapter 4: Loving the Game
  

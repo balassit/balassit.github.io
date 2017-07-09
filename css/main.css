@@ -35,6 +35,10 @@ nav{
     text-align: center;
 }
 
+.masthead-title {
+    text-align: center;
+}
+
 .wrap {
     position: relative;
     width: 100%;

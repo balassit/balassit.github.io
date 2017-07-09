@@ -27,16 +27,18 @@ at home because he was used to the noise.
  - Experience should be about learning and passion first, then competition later on. This is why children should not 
  be trained to win at an early age, but rather on learning the fundamentals and growing their passion.
 
-### Chapter 2: Losing to Win
+## Chapter 2: Losing to Win
 
  - You can learn from your failures; must be able to frame with properly
  - Give time away to reconnect after great wins or failures
 
-### Chapter 4: Approaches to Learning
-
- - Reflection question: What allows some to succeed and what is the point of it?
+## Chapter 3: Two Approaches to Learning
+ - Reflection question: What is the difference that allows some to fit into that narrow window to the top?
+ What is the point? If ambition spells probably disappointment, why pursue excellence?
  
-#### Entity vs Incremental Theory of Intelligence
+ Have a well-thought-out approach that inspires resilience, the ability to make connections between diverse pursuits, and day-to-day enjoyment of the process.
+ 
+### **Entity vs Incremental Theory of Intelligence**
 
 **Entity Theory**: Influenced by parents and teaches. Would say "I'm smart at this." 
 Attribute success or failure to brain and unalterable ability. Think that intelligence is a fixed entity.
@@ -61,12 +63,14 @@ Focus is on long term development instead of quick results. What happens when yo
  - Don't live in a shell of mediocrity; growth comes at the expense of comfort or safety
    + example is the hermit crab who abandons shell
  - Gain from your experiences along the way; it will lead to happiness.
+
+### **Focusing on the End Game**
+
+Many will start with the beginning of the game as the starting point with the immediate goal to win as soon as possible.
+Start in different situations with reduced complexity and clear principles. 
+Define a purpose at the start.
  
-#### Focusing on the End Game
- 
-Starting with reduced complexity and clear principles. Define a purpose at the start.
- 
-### Chapter 4: Loving the Game
+## Chapter 4: Loving the Game
  
  - Put yourself out there. DO not be afraid to damage ego with losing
  - Short term goals can be useful if they're balanced with a nurturing, long term philosophy
@@ -76,7 +80,7 @@ Starting with reduced complexity and clear principles. Define a purpose at the s
  To say that losing does not matter can be an insult when it clearly does to the loser. 
  Learn how to respond properly to the situation.
  
- #### Balancing long term process, short term goals, and inevitable setbacks
+### **Balancing long term process, short term goals, and inevitable setbacks**
   
  -  Compete in a healthy manner
     + Coach can be help by internalizing process oriented approach by making everyday feedback respond to effort over the result.

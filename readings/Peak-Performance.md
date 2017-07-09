@@ -74,9 +74,8 @@ Walk away when you are stuck. Creativity can be spurred by taking yourself out o
 Use social interactions as a recovery and relaxation tool. Surround yourself with positive people and allow yourself to 
  shift focus away from stressors.
 
-Check out the out the Art of Learning Book
+**6. Mindfulness**:
 
-**6.**:
 Take a moment to say something nice about each person you see before engaging with them in your head as a primer for positive attitude.
 
 "Disconnection work from life is an illusion." - Peak Performance

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Peak Performance Notes"
+title: "Art of Learning Notes"
 ---
 
 ## Introduction

@@ -22,6 +22,10 @@ page_data:
     id: "about"
     url: "about"
 
+  - title: "Coding"
+    id: "coding"
+    url: "coding"
+
   - title: "Readings"
     id: "readings"
     url: "readings"

@@ -1,6 +1,6 @@
 ---
 layout: gitnotes-markdown
-title: "Readings"
+title: "Git Notes"
 custom_css: css/github-markdown.min.css
 ---
 ## Version Control

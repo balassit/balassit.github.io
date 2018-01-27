@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{{ content }}
+<div class="tabs">
+    <div class="tab">
+        <label for="tab-1">Git Notes</label>
+        <hr>
+        <input id="tab-1" name="tabs-three" type="checkbox" checked="checked" onchange="displayText(this.checked, id)">
+        <div id ="tab1">
+            <h3 id="git-book-20"><a href="/pdf/web/viewer.html?file=progit.pdf">Git Book 2.0</a></h3>
+            <p>All things Git. An in depth explanation of how to use Git and what it is.</p>
+
+            <h3 id="git-notes"><a href="/coding/Git-Notes">Git Notes</a></h3>
+            <p>Notes that I have taken from the Git Book as an abbreviated versions, with frequently used commands.</p>
+        </div>
+    </div>
+    <div class="tab">
+        <label for="tab-2">C# Language</label>
+        <hr>
+        <input id="tab-2" name="tabs-three" type="checkbox" checked="checked" onchange="displayText(this.checked, id)">
+        <div id ="tab2">
+            <h3 id="c-sharp"><a href="/coding/CSharp">C# Language Notes</a></h3>
+            <p>Notes that I have taken from on the C# language with example code.</p>
+        </div>
+    </div>
+</div>
+<script>
+    function displayText(checked, id){
+        var tabID = "#" + id.replace('-','');
+        if(checked) {
+            $(tabID).fadeIn();
+        }
+        else {
+            return $(tabID).fadeOut();
+        }
+    }
+</script>

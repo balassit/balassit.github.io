@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: "A Tour of the C# Language"
+title: "Inheritance and Method Overriding"
 custom_css: css/github-markdown.min.css
 ---
 

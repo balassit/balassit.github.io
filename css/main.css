@@ -40,8 +40,11 @@ nav{
 }
 
 .wrap {
+    display: inline-block
     position: relative;
-    width: 100%;
+    width: 95%;
+    margin-left:3rem;
+    margin-right:3rem;
 }
 main {
     margin-top: 2rem;
